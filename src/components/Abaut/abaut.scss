@@ -1,0 +1,48 @@
+@import "./../../style/variables";
+@import "./../../style/typography";
+
+
+
+
+#abaut{
+    margin-bottom: 80px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    .abaut-bf{
+
+
+        &::before{
+            left: -65px;
+        }
+    }
+
+    .abaut{
+        display: flex;
+        padding-top: 36px;
+        padding-bottom: 36px;
+
+    }
+
+    p{
+        text-align: justify;
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    img{
+        width: 500px;
+        margin-left: 80px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

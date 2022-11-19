@@ -1,0 +1,144 @@
+@import "variables";
+@import "mixins";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,600&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+
+p{
+  font-weight: 400;
+}
+a {text-decoration: none;}
+
+.container {
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  @include for-Small-devices {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+
+
+
+.section-title{
+  text-align: center;  
+  position: relative;
+  font-size: 50px;
+  margin-bottom: 50px;
+
+
+  &::before{
+    content: "";
+    background-color: #fee358;
+    position: absolute;
+    width: 90px;
+    height: 4px;
+    top: 90%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.more-btn{
+  color: white;
+  background-color: $orange;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 600;
+  border: 3px solid $orange;
+
+  &:hover{
+    background-color: transparent;
+    color: $orange;
+  }
+
+  
+}
+
+
+
+
+.header-bg{
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+
+  .page-name{
+    background-color: #fcd100cc;
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    width: 500px ;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+}
+
+
+.item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+.WorkName{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 115px;
+  background-color: #fcd100cc;
+  display: flex;
+  width: 350px;
+  justify-content: center;
+
+  padding: 20px;
+  align-items: center;
+
+      .tools{
+          margin: 0;
+          width: 20px;
+          height: 20px;
+      }
+
+
+      h3{
+          margin-left: 5px;
+          color: white;               
+          font-size: 13px;
+          font-weight: bold;
+      }
+  }
+
+
+}

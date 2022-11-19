@@ -1,0 +1,19 @@
+npm init -y
+
+npm i -D webpack webpack-cli webpack-dev-server
+
+npm i -D babel-loader @babel/core @babel/preset-env
+
+npm i @babel/preset-react
+
+npm i -D css-loader mini-css-extract-plugin
+
+npm i -D scss scss-loader
+
+npm i html-webpack-plugin
+
+npm install @mui/material @emotion/react @emotion/styled
+
+npm i react
+
+npm i react-dom

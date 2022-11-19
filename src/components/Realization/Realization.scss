@@ -1,0 +1,46 @@
+@import "./../../style/variables";
+@import "./../../style/typography";
+
+
+
+.bg-realization{
+    background-image: url(./photos/realization.jpg);
+}
+
+.realization{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    
+
+    .items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .btn-more{
+            display: flex;
+            justify-content: center;
+
+            h4{
+                width: 200px;
+                background-color: #fcd100;
+                color: white;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+     
+
+
+        img{
+            width: 400px;
+            height: 400px;
+            margin: 30px;     
+        }
+    }
+
+}

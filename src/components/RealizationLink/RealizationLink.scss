@@ -1,0 +1,46 @@
+@import "./../../style/variables";
+@import "./../../style/typography";
+
+
+#RealizationLink{
+    background-image: url('../../images/RealizationLinkBG.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+    .deails {
+        position: absolute;
+        background-color: $green;
+        color: white;
+        right: 100px;
+        bottom: 100px;
+        padding: 20px;
+        width: 400px;
+    }
+
+
+       
+
+
+    p{
+        margin-top: 20px;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    h4{
+        font-size: 35px;
+        &::before{
+            content: "";
+            background-color: #fcd100;
+            position: absolute;
+            width: 90px;
+            height: 4px;
+            top: 52px;
+            left: 23px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+/* Breakpoint */
+
+$Sm: 768px;
+$Md: 1500px;
+$Lg: 1920px;
+
+@mixin for-Small-devices {
+  @media (max-width: $Sm) {
+    @content;
+  }
+}
+@mixin for-Medium-devices {
+  @media (min-width: $Sm) and (max-width: $Md) {
+    @content;
+  }
+}
+@mixin for-Large-devices {
+  @media (min-width: $Md) and (max-width: $Lg) {
+    @content;
+  }
+}
+@mixin for-XX-Large-devices {
+  @media (min-width: $Lg) {
+    @content;
+  }
+}

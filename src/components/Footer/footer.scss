@@ -1,0 +1,82 @@
+@import "./../../style/variables";
+@import "./../../style/typography";
+
+footer {
+  background-image: url('../../images/footer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+
+  img{
+    width: 25px;
+  }
+
+  .contact-link{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    h3{
+      margin-left: 20px;    
+    }
+  }
+
+  &::before{
+    content: "";
+    background-color: #00000091;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  h4{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 20px;
+    position: relative;
+
+    &::before{
+      content: "";
+      background-color: $orange;
+      position: absolute;
+      width: 49px;
+      height: 3px;
+      top: 23px;
+      left: 2px;
+    }
+  }
+
+  h3{
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  a{
+    color: white;
+    
+    &:hover{
+      
+      color: $orange;
+    }
+  }
+
+  .footer-column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px 10px;
+  }
+
+ 
+
+}

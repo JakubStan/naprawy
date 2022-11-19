@@ -1,0 +1,50 @@
+@import "./../../style/variables";
+@import "./../../style/typography";
+
+
+.bg-contact{
+    background-image: url('./contact-bg.jpg');
+}
+
+.contact{   
+
+ 
+
+    .contact-content{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    
+
+        h4{
+            font-size: 20px;
+        }
+
+        .contact-data{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-link{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            a{
+                color: black;
+            }
+
+            img{
+                width: 25px;
+                margin-right: 30px;
+            }
+        }
+
+    }
+
+}
+

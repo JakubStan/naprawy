@@ -1,0 +1,142 @@
+@import "./../../style/variables";
+@import "./../../style/typography";
+
+
+
+
+.SliderTop{
+
+  padding-top: 90px;
+
+
+.slick-slide > div {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.slide{
+  height: 88vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+
+
+  .offer-details{
+    position: absolute;
+    background-color: $green;
+    left: 50px;
+    bottom: 65px;
+    padding: 20px;
+    width: 400px;
+
+    h4, p{
+      color: white;
+      font-size: 25px;
+    }
+
+    h4{
+      &::before {
+        content: "";
+        background-color: $orange;
+        position: absolute;
+        width: 81px;
+        height: 3px;
+        top: 47px;
+        left: 21px;
+    }
+  }
+    p{
+      margin-top: 20px;
+      text-align: justify;
+      font-size: 20px;
+    }
+
+  
+  }
+  
+}
+  .construction{
+    background-image: url('./sliders/construction.jpg');
+    background-position: top;   
+}
+
+.electrican{
+  background-image: url('./sliders/electrician.jpg');
+  background-position: center;   
+}
+
+.engineer{
+background-image: url('./sliders/engineer.jpg');
+background-position: top;  
+}
+
+.electric{
+  background-image: url('./sliders/electric.jpg');
+  background-position: bottom; 
+  }
+
+.laying{
+  background-image: url('./sliders/laying.jpg');
+  background-position: center;
+}
+
+.wall-painting{
+  background-image: url('./sliders/wall-painting.jpg');
+  background-position: top;
+}
+
+.slick-dots li button {
+  display: none;
+} 
+
+
+
+.slick-arrow{
+width: 44px !important;
+height: 44px !important;
+}
+
+
+.slick-prev {
+left: 600px !important; 
+
+&:before {
+  content: "\276E" !important;     
+  left: 9px;
+}
+}
+
+.slick-next {
+right: 960px !important;
+
+&:before {
+  content: "\276F" !important;
+  right: 9px;    
+}
+
+}
+
+.slick-prev, .slick-next {
+
+z-index: 1;
+top: 85% !important;
+background: $orange !important;
+
+&:hover{
+  background: #201e1e99 !important;
+
+}
+
+
+&::before{
+  top: 0px;
+  font-size: 40px !important;
+  position: absolute;    
+  opacity: 1;
+}
+}
+
+
+
+
+}
