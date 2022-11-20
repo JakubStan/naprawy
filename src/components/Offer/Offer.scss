@@ -2,7 +2,7 @@
 @import "./../../style/typography";
 
 
-#Offer{
+#offert{
     margin: 80px 0px;
 }
 
@@ -16,7 +16,16 @@
     .item{
         img{
             width: 400px;
-            height: 400px;
+            height: 100%;
+        }
+
+        .WorkName{
+            h3{
+                font-size: 20px;
+            }
+            img{
+                width: 25px;
+            }            
         }
     }
 }

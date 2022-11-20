@@ -1,7 +1,4 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { MenuLeft } from "./MenuLeft";
 import "./pages.scss";
 import check from "../icons/check.png";
 
@@ -15,9 +12,7 @@ export function Bathrooms() {
       </div>
 
       <div className="offer-content">
-        <div className="offer-menu">
-          <MenuLeft />
-        </div>
+  
 
         <div className="offer-details">
           <div className="list">
@@ -46,7 +41,7 @@ export function Bathrooms() {
 
             <div className="list-item">
               <img className="check" src={check} />
-              <p>cięcie płytek pod kątem 45 stopni</p>
+              <p>Cięcie płytek pod kątem 45 stopni</p>
             </div>
 
             <div className="list-item">

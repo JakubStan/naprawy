@@ -1,11 +1,13 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import { MenuLeft } from "./MenuLeft";
+
 import check from "../icons/check.png";
 
 export function ElectricalModifications() {
   return (
     <>
+
+
+
       <div className="header-bg bg-ElectricalModifications">
         <div className="page-name">
           <h2>PRZERÓBKI ELEKTRYCZNE</h2>
@@ -13,9 +15,7 @@ export function ElectricalModifications() {
       </div>
 
       <div className="offer-content">
-        <div className="offer-menu">
-          <MenuLeft />
-        </div>
+
 
         <div className="offer-details">
           <div className="list">

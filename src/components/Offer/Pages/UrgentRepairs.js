@@ -1,5 +1,5 @@
 import React from "react";
-import { MenuLeft } from "./MenuLeft";
+
 import check from "../icons/check.png";
 
 export function UrgentRepairs() {
@@ -12,9 +12,7 @@ export function UrgentRepairs() {
       </div>
 
       <div className="offer-content">
-        <div className="offer-menu">
-          <MenuLeft />
-        </div>
+
 
         <div className="offer-details">
           <div className="list">

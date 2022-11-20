@@ -1,6 +1,9 @@
 import "./header.scss";
 import logo from "../../images/logo.png";
+import { HashLink } from 'react-router-hash-link';
 import { Link } from "react-router-dom";
+
+
 
 const Callto = ({ phone, children }) => {
   return <a href={`tel:${phone}`}>{children}</a>;
@@ -31,15 +34,13 @@ function Header() {
 
             <ul class="menu">
               <li>
-                <Link className="line" to="Abaut">
-                  O NAS
-                </Link>
+                <HashLink className="line" smooth to="/#abaut">O NAS</HashLink>
               </li>
+           
               <li>
-                <Link className="line" to="#Offer">
-                  OFERTA
-                </Link>
+                <HashLink className="line"  smooth to="/#offert">OFERTA</HashLink>
               </li>
+           
               <li>
                 <Link className="line" to="Realization">
                   REALIZACJE

@@ -45,10 +45,15 @@ const RealizationLink = () => {
     return null;
   } else if (pathname === "/BathroomRenovation") {
     return null;
+  } else if (pathname === "/PressureWall") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse4") {
+    return null;
   } else if (pathname === "/BathroomFinish") {
     return null;
-  }
-
+  } 
   return (
     <>
       <section id="RealizationLink">
@@ -61,7 +66,7 @@ const RealizationLink = () => {
             ad minim veniam, quis nostrud exercitation ullamco laboris
           </p>
 
-          <Link to="/Renovations" className="more-btn">
+          <Link to="/Realization" className="more-btn">
             WIĘCEJ
           </Link>
         </div>

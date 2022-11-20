@@ -44,17 +44,7 @@ a {text-decoration: none;}
   margin-bottom: 50px;
 
 
-  &::before{
-    content: "";
-    background-color: #fee358;
-    position: absolute;
-    width: 90px;
-    height: 4px;
-    top: 90%;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
+ 
 }
 
 
@@ -66,6 +56,10 @@ a {text-decoration: none;}
   margin-top: 20px;
   font-weight: 600;
   border: 3px solid $orange;
+
+  h3{
+    font-weight: 700;
+  }
 
   &:hover{
     background-color: transparent;
@@ -86,7 +80,7 @@ a {text-decoration: none;}
 
 
   .page-name{
-    background-color: #fcd100cc;
+    background-color: $orange;
     color: white;
     position: absolute;
     margin-left: auto;
@@ -117,7 +111,7 @@ a {text-decoration: none;}
   left: 0;
   right: 0;
   bottom: 115px;
-  background-color: #fcd100cc;
+  background-color: $orange;
   display: flex;
   width: 350px;
   justify-content: center;

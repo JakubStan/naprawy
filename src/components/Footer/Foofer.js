@@ -1,8 +1,4 @@
-
-
-
-                
-import react from "react";
+import { HashLink } from 'react-router-hash-link';
 import "./footer.scss";
 import { Link } from 'react-router-dom';
 import at from './at.png';
@@ -70,26 +66,17 @@ const Footer = () => {
                         </Link> 
 
                         <Link to="InteriorFinishing" className="off-link">
-                            <h3>WYKOŃCZENIA</h3>                                     
+                            <h3>REMONTY I WYKOŃCZENIA</h3>                                     
                         </Link> 
-
-                        <Link className="off-link" to="Renovations">
-                            <h3>REMONTY</h3>                                      
-                        </Link>
-
-                        <Link className="off-link" to="Filling">
-                            <h3>SZPACHLOWANIE</h3>                                     
-                        </Link> 
+          
 
                     </div>
 
                     <div className="column">
                         <h4>O FIRMIE</h4>
 
-                        <Link className="off-link" to="Abaut">
-                            <h3>O FIRMIE</h3>                                     
-                        </Link>
-
+                        <HashLink className="off-link" smooth to="/#abaut"><h3>O NAS</h3></HashLink>
+                        <HashLink className="off-link"  smooth to="/#offert"><h3>OFERTA</h3></HashLink>
                         
                         <Link className="off-link" to="Realization">
                             <h3>REALIZACJE</h3>                                     

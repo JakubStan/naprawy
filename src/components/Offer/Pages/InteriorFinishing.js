@@ -1,6 +1,4 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import { MenuLeft } from "./MenuLeft";
 import check from "../icons/check.png";
 
 export function InteriorFinishing() {
@@ -13,9 +11,7 @@ export function InteriorFinishing() {
       </div>
 
       <div className="offer-content">
-        <div className="offer-menu">
-          <MenuLeft />
-        </div>
+
 
         <div className="offer-details">
           <div className="list">
@@ -49,9 +45,7 @@ export function InteriorFinishing() {
               <img className="check" src={check} />
               <p>Układanie paneli i listew przypodłogowych</p>
             </div>
-          </div>
-
-          <div className="list">
+ 
             <div className="list-item">
               <img className="check" src={check} />
               <p>

@@ -51,15 +51,22 @@ export function Carusel() {
     return null;
   } else if (pathname === "/BathroomRenovation") {
     return null;
+  } else if (pathname === "/PressureWall") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse4") {
+    return null;
   } else if (pathname === "/BathroomFinish") {
     return null;
-  }
+  } 
 
   const [defaultImage, setDefaultImage] = useState({});
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 2500,
+    arrows: false,
     autoplay: true,
 
     slidesToShow: 3,

@@ -47,9 +47,15 @@ export function Abaut() {
     return null;
   } else if (pathname === "/BathroomRenovation") {
     return null;
+  } else if (pathname === "/PressureWall") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse4") {
+    return null;
   } else if (pathname === "/BathroomFinish") {
     return null;
-  }
+  } 
 
   return (
     <>

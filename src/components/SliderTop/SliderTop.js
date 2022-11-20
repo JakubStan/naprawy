@@ -46,15 +46,21 @@ function SliderTop() {
     return null;
   } else if (pathname === "/BathroomRenovation") {
     return null;
+  } else if (pathname === "/PressureWall") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse4") {
+    return null;
   } else if (pathname === "/BathroomFinish") {
     return null;
-  }
+  } 
 
   const settings = {
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 6000,
+    autoplaySpeed: 800,
     speed: 4000,
     arrows: true,
     slidesToShow: 1,

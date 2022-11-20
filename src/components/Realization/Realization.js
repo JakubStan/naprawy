@@ -8,8 +8,8 @@ import Tools from "./hammer-tool.png";
 import SingleFamilyHouse3 from "./photos/album1/SingleFamilyHouse22.jpg";
 import HomeFinishing from "./photos/album2/HomeFinishing4.jpg";
 import Kitchen from "./photos/album3/KitchenRenovation1.png";
-import Toilet from "./photos/album4/Toilet13.png";
-import Flat from "./photos/album5/ToiletFlat5.png";
+import Toilet from "./photos/album4/Toilet13.jpg";
+import Flat from "./photos/album5/ToiletFlat5.jpg";
 import SingleFamilyHouse4 from "./photos/album6/SingleFamilyHouse8.jpg";
 import PressureWall from "./photos/album7/PressureWall2.jpg";
 import CeilingEnlargement from "./photos/album8/CeilingEnlargement1.jpg";
@@ -39,13 +39,36 @@ const Realization = () => {
     return null;
   } else if (pathname === "/Contact") {
     return null;
+
+  } else if (pathname === "/SingleFamilyHouse3") {
+    return null;
+  } else if (pathname === "/HomeFinishing") {
+    return null;
+  } else if (pathname === "/Kitchen") {
+    return null;
   } else if (pathname === "/Toilet") {
     return null;
-  } else if (pathname === "/Offer") {
+  } else if (pathname === "/PressureWall }") {
     return null;
-  } else if (pathname === "/Abaut") {
+  } else if (pathname === "/CeilingEnlargement") {
     return null;
-  }
+  } else if (pathname === "/SingleFamilyHouse ") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse2") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse4 ") {
+    return null;
+  } else if (pathname === "/BathroomRenovation") {
+    return null;
+  } else if (pathname === "/PressureWall") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse4") {
+    return null;
+  } else if (pathname === "/BathroomFinish") {
+    return null;
+  } 
 
   return (
     <>
@@ -60,7 +83,6 @@ const Realization = () => {
           <div className="item">
             <img src={SingleFamilyHouse3} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>WYKOŃCZENIE DOMU JEDNORODZINNEGO</h3>
             </div>
             <Link className="more-btn" to="/SingleFamilyHouse3">
@@ -71,7 +93,6 @@ const Realization = () => {
           <div className="item">
             <img src={HomeFinishing} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>WYKOŃCZENIE DOMU JEDNORODZINNEGO</h3>
             </div>
             <Link to="/HomeFinishing">
@@ -84,7 +105,6 @@ const Realization = () => {
           <div className="item">
             <img src={Kitchen} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>REMONT KUCHNI</h3>
             </div>
             <Link to="/Kitchen">
@@ -97,7 +117,6 @@ const Realization = () => {
           <div className="item">
             <img src={Toilet} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>REMONT ŁAZIEKI I WC</h3>
             </div>
             <Link to="/Toilet">
@@ -110,7 +129,6 @@ const Realization = () => {
           <div className="item">
             <img src={Flat} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>REMONT MIESZKANIA I ŁAZIĘKI</h3>
             </div>
             <Link to="/Flat">
@@ -123,7 +141,6 @@ const Realization = () => {
           <div className="item">
             <img src={PressureWall} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>ŚCIANKA DOCISKOWA</h3>
             </div>
             <Link to="/PressureWall">
@@ -136,7 +153,6 @@ const Realization = () => {
           <div className="item">
             <img src={CeilingEnlargement} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>WYKONANIE POWIĘKSZENIA STROPU</h3>
             </div>
             <Link to="/CeilingEnlargement">
@@ -149,7 +165,6 @@ const Realization = () => {
           <div className="item">
             <img src={SingleFamilyHouse} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>WYKOŃCZENIE ŁAZIEKI</h3>
             </div>
             <Link to="/SingleFamilyHouse">
@@ -162,7 +177,6 @@ const Realization = () => {
           <div className="item">
             <img src={SingleFamilyHouse2} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>WYKOŃCZENIE DOMU JEDNORODZINNEGO</h3>
             </div>
             <Link to="/SingleFamilyHouse2">
@@ -175,7 +189,6 @@ const Realization = () => {
           <div className="item">
             <img src={BathroomRenovation} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>REMONT ŁAZIĘKI</h3>
             </div>
             <Link to="/BathroomRenovation">
@@ -188,7 +201,6 @@ const Realization = () => {
           <div className="item">
             <img src={SingleFamilyHouse4} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>WYKOŃCZENIE DOMU JEDNORODZINNEGO</h3>
             </div>
             <Link to="/SingleFamilyHouse4">
@@ -201,7 +213,6 @@ const Realization = () => {
           <div className="item">
             <img src={BathroomFinish} />
             <div className="WorkName">
-              <img className="tools" src={Tools} />
               <h3>WYKOŃCZENIE ŁAZIEKI</h3>
             </div>
             <Link to="/BathroomFinish">

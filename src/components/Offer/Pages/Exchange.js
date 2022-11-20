@@ -1,11 +1,12 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import { MenuLeft } from "./MenuLeft";
 import check from "../icons/check.png";
 
 export function Exchange() {
   return (
     <>
+
+
+
       <div className="header-bg bg-Exchange">
         <div className="page-name">
           <h2>WYMIANY</h2>
@@ -13,9 +14,7 @@ export function Exchange() {
       </div>
 
       <div className="offer-content">
-        <div className="offer-menu">
-          <MenuLeft />
-        </div>
+
 
         <div className="offer-details">
           <div className="list">

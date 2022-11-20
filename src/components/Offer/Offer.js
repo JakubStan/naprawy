@@ -10,6 +10,16 @@ import electric from "../SliderTop/sliders/electric.jpg";
 import laying from "../SliderTop/sliders/laying.jpg";
 import wallpainting from "../SliderTop/sliders/wall-painting.jpg";
 
+
+import bathroom from './icons/bathroom-white.png';
+import paintroller from './icons/paintroller-white.png';
+import plumbing from './icons/plumbing-white.png';
+import renovation from './icons/renovation-white.png';
+import repairtols from './icons/repairtols-white.png';
+import tools from './icons/tools-white.png';
+import trowel from './icons/trowel-white.png'
+import wrench from './icons/wrench-white.png';
+
 const Offer = () => {
   const { pathname } = useLocation();
 
@@ -53,29 +63,38 @@ const Offer = () => {
     return null;
   } else if (pathname === "/BathroomRenovation") {
     return null;
+  } else if (pathname === "/PressureWall") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse") {
+    return null;
+  } else if (pathname === "/SingleFamilyHouse4") {
+    return null;
   } else if (pathname === "/BathroomFinish") {
     return null;
-  }
+  } 
+  
 
   return (
     <>
-      <section id="Offer">
+      <section id="offert">
         <h2 className="section-title offer-bf">OFERTA</h2>
 
         <div className="container">
           <div className="item">
             <img src={construction} />
             <div className="WorkName">
-              <h3>NAPRAWY PILNE</h3>
+              <img src={repairtols}/>
+              <h3>NAPRAWY PILNE</h3>              
             </div>
             <Link className="more-btn" to="/UrgentRepairs">
-              WIĘCEJ
+              <h3>WIĘCEJ</h3>              
             </Link>
           </div>
 
           <div className="item">
             <img src={electrician} />
             <div className="WorkName">
+              <img src={tools}/>
               <h3>PRZERÓBKI ELEKTRYCZNE</h3>
             </div>
             <Link className="more-btn" to="/ElectricalModifications">
@@ -86,6 +105,7 @@ const Offer = () => {
           <div className="item">
             <img src={engineer} />
             <div className="WorkName">
+              <img src={wrench}/>
               <h3>PRZERÓBKI HYDRAULICZNE</h3>
             </div>
             <Link className="more-btn" to="/HydraulicModifications">
@@ -96,6 +116,7 @@ const Offer = () => {
           <div className="item">
             <img src={laying} />
             <div className="WorkName">
+              <img src={bathroom}/>
               <h3>ŁAZIENKI</h3>
             </div>
             <Link className="more-btn" to="/Bathrooms">
@@ -106,6 +127,7 @@ const Offer = () => {
           <div className="item">
             <img src={wallpainting} />
             <div className="WorkName">
+              <img src={renovation}/>
               <h3>REMONTY I WYKOŃCZENIA</h3>
             </div>
             <Link className="more-btn" to="/InteriorFinishing">
@@ -116,6 +138,7 @@ const Offer = () => {
           <div className="item">
             <img src={electric} />
             <div className="WorkName">
+              <img src={plumbing}/>
               <h3>WYMIANY</h3>
             </div>
             <Link className="more-btn" to="/Exchange">

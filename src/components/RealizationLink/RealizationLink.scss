@@ -35,7 +35,7 @@
         font-size: 35px;
         &::before{
             content: "";
-            background-color: #fcd100;
+            background-color: $orange;
             position: absolute;
             width: 90px;
             height: 4px;

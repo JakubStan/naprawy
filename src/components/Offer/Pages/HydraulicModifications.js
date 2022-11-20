@@ -1,6 +1,4 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
-import { MenuLeft } from "./MenuLeft";
 import check from "../icons/check.png";
 
 export function HydraulicModifications() {
@@ -13,9 +11,7 @@ export function HydraulicModifications() {
       </div>
 
       <div className="offer-content">
-        <div className="offer-menu">
-          <MenuLeft />
-        </div>
+   
 
         <div className="offer-details">
           <div className="list">
