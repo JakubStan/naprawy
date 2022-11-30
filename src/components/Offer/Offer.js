@@ -87,7 +87,7 @@ const Offer = () => {
               <h3>NAPRAWY PILNE</h3>              
             </div>
             <Link className="more-btn" to="/UrgentRepairs">
-              <h3>WIĘCEJ</h3>              
+              WIĘCEJ              
             </Link>
           </div>
 

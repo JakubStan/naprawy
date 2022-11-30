@@ -1,26 +1,9 @@
 import React from "react";
+import './gallery.scss';
+import  WSPGallery from './WSPGallery';
+import galleryImages from '../photos/album2/album2';
 
 
-const galleryImages = [
-  {
-    img: "../photos/album2/HomeFinishing1.jpg",
-  },
-  {
-    img: "../photos/album2/HomeFinishing2.jpg",
-  },
-  {
-    img: "../photos/album2/HomeFinishing3.jpg",
-  },
-  {
-    img: "../photos/album2/HomeFinishing4.jpg",
-  },
-  {
-    img: "../photos/album2/HomeFinishing5.jpg",
-  },
-  {
-    img: "../photos/album2/HomeFinishing6.jpg",
-  },
-];
 
 export function HomeFinishing() {
   return (
@@ -34,7 +17,7 @@ export function HomeFinishing() {
 
       <section id="gallery">
         <h3 className="section-title">ŁAZIEKA ORAZ SALON</h3>
-        <WSPGallery galleryImages={galleryImages} />
+        <WSPGallery galleryImages={galleryImages}/>
       </section>
     </>
   );

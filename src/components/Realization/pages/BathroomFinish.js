@@ -1,4 +1,9 @@
 import React from "react";
+import './gallery.scss';
+import  WSPGallery from './WSPGallery';
+import galleryImages from '../photos/album12/album12';
+
+
 
 
 export function BathroomFinish() {
@@ -12,7 +17,7 @@ export function BathroomFinish() {
       
       <section id="gallery">
         <h3 className="section-title">WYKOŃCZENIE ŁAZIEKI</h3>
-       
+        <WSPGallery galleryImages={galleryImages}/>
       </section>
     </>
   );

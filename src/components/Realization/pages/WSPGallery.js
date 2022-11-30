@@ -7,8 +7,14 @@ import {
   faCircleXmark
 } from '@fortawesome/free-solid-svg-icons'
 
-import './wsp-gallery.scss'
 
+
+
+import image1 from '../photos/album1/SingleFamilyHouse1.jpg'
+import './wsp-gallery.scss'
+var galleryImages = {
+  img: image1
+}
 const WSPGallery = ({galleryImages}) => {
 
   const [slideNumber, setSlideNumber] = useState(0)
@@ -47,7 +53,7 @@ const WSPGallery = ({galleryImages}) => {
           <FontAwesomeIcon icon={faCircleChevronLeft} className='btnPrev' onClick={prevSlide} />
           <FontAwesomeIcon icon={faCircleChevronRight} className='btnNext' onClick={nextSlide} />
           <div className='fullScreenImage'>
-            <img src={galleryImages[slideNumber].src} alt='' />
+            <img src={galleryImages[slideNumber].img} alt='' />
           </div>
         </div>
       }
@@ -67,7 +73,7 @@ const WSPGallery = ({galleryImages}) => {
                 key={index}
                 onClick={ () => handleOpenModal(index) }
               >
-                <img src={slide.src} alt='' />
+                <img src={slide.img} alt='' />
               </div>
             )
           })

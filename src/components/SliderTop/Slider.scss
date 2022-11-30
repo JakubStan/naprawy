@@ -6,15 +6,13 @@
 
 .SliderTop{
 
-  padding-top: 90px;
-
-
+  
 .slick-slide > div {
   padding: 0px !important;
   margin: 0px !important;
 }
 .slide{
-  height: 88vh;
+  height:100vh;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -23,7 +21,7 @@
 
   .offer-details{
     position: absolute;
-    background-color: $green;
+    background-color: $green2;
     left: 50px;
     bottom: 65px;
     padding: 20px;
@@ -40,8 +38,8 @@
         background-color: $orange;
         position: absolute;
         width: 81px;
-        height: 3px;
-        top: 47px;
+        height: 4px;
+        top: 50px;
         left: 21px;
     }
   }
@@ -92,8 +90,8 @@ background-position: top;
 
 
 .slick-arrow{
-width: 44px !important;
-height: 44px !important;
+width: 45px !important;
+height: 45px !important;
 }
 
 
@@ -119,11 +117,11 @@ right: 960px !important;
 .slick-prev, .slick-next {
 
 z-index: 1;
-top: 85% !important;
-background: $orange !important;
+top: 87% !important;
+background: $green2 !important;
 
 &:hover{
-  background: #201e1e99 !important;
+  background: $orange !important;
 
 }
 

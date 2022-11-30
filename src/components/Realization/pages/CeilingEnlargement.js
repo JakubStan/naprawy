@@ -1,17 +1,9 @@
 import React from "react";
+import './gallery.scss';
+import  WSPGallery from './WSPGallery';
+import galleryImages from '../photos/album8/album8';
 
 
-const galleryImages = [
-  {
-    img: "../photos/album8/CeilingEnlargement1.jpg",
-  },
-  {
-    img: "../photos/album8/CeilingEnlargement2.jpg",
-  },
-  {
-    img: "../photos/album8/CeilingEnlargement3.jpg",
-  },
-];
 
 export function CeilingEnlargement() {
   return (
@@ -27,8 +19,9 @@ export function CeilingEnlargement() {
       <section id="gallery">
         <h3 className="section-title">
           WYKONANIE POWIĘKSZANIE STOPU ORAZ POSADZKI NA KONSTRUKCJI DREWNIANEJ
+          <WSPGallery galleryImages={galleryImages}/>
         </h3>
-        <WSPGallery galleryImages={galleryImages} />
+       
       </section>
     </>
   );

@@ -1,18 +1,11 @@
-import { faRoad } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-import PhotoAlbum from "react-photo-album";
+import './gallery.scss';
+import  WSPGallery from './WSPGallery';
+import galleryImages from '../photos/album1/album1';
 
-import photo from "./photos/album1/SingleFamilyHouse1.jpg"
 
-const photos = [
-  {
-    src : "./photos/album1/SingleFamilyHouse1.jpg",
-    width: 800,
-    height: 600
-  },
-  
-   
-];
+
+
 
 export function SingleFamilyHouse3() {
   return (
@@ -27,9 +20,9 @@ export function SingleFamilyHouse3() {
       
       <section id="gallery">
         <h3 className="section-title">ŁAZIEKA ORAZ SALON</h3>
-        <PhotoAlbum layout="rows" photos={photos} />
-      </section>
-    </>
+            <WSPGallery galleryImages={galleryImages}/>
+        </section>
+      </>
   );
 }
 

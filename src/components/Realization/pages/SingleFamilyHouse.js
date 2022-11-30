@@ -1,26 +1,9 @@
-import React from "react";
+import './gallery.scss';
+import  WSPGallery from './WSPGallery';
+import galleryImages from '../photos/album9/album9';
 
 
-const galleryImages = [
-  {
-    img: "../photos/album9/SingleFamilyHouse1.png",
-  },
-  {
-    img: "../photos/album9/SingleFamilyHouse2.png",
-  },
-  {
-    img: "../photos/album9/SingleFamilyHouse3.png",
-  },
-  {
-    img: "../photos/album9/SingleFamilyHouse4.png",
-  },
-  {
-    img: "../photos/album9/SingleFamilyHouse5.png",
-  },
-  {
-    img: "../photos/album9/SingleFamilyHouse6.png",
-  },
-];
+
 
 export function SingleFamilyHouse() {
   return (
@@ -36,7 +19,7 @@ export function SingleFamilyHouse() {
         <h3 className="section-title">
           WYKONANIE ŁAZIENEK W DOMU JEDNORODZINNYM
         </h3>
-        <WSPGallery galleryImages={galleryImages} />
+        <WSPGallery galleryImages={galleryImages}/>  
       </section>
     </>
   );
