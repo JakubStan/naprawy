@@ -59,8 +59,10 @@ export function Carusel() {
     return null;
   } else if (pathname === "/BathroomFinish") {
     return null;
-  } 
-
+  }
+  else if (pathname === "/Flat") {
+  return null;
+}
   const [defaultImage, setDefaultImage] = useState({});
   const settings = {
     dots: false,

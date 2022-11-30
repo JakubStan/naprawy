@@ -1,3 +1,6 @@
+@import '../../../style/variables';
+
+
 #gallery{
   margin-top: 150px;
   margin-bottom: 150px;
@@ -51,7 +54,7 @@
 }
 
 .btnNext:hover, .btnPrev:hover, .btnClose:hover {
-  opacity: 1;
+  color: $orange;
 }
 
 .sliderWrap {

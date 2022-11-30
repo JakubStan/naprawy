@@ -53,7 +53,10 @@ const RealizationLink = () => {
     return null;
   } else if (pathname === "/BathroomFinish") {
     return null;
-  } 
+  }  else if (pathname === "/Flat") {
+    return null;
+  }
+  
   return (
     <>
       <section id="RealizationLink">
