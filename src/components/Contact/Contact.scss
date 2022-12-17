@@ -6,7 +6,9 @@
     background-image: url('./contact-bg.jpg');
 }
 
-.contact{   
+.contact{
+    
+    margin: 0 20px;
 
  
 
@@ -17,12 +19,27 @@
         margin-top: 50px;
         margin-bottom: 50px;
 
+        @media screen and (max-width: $Sm) {
+            flex-direction: column;
+        }
+
+        @media (min-width: $Sm) and (max-width: $Md) {
+            flex-direction: column;
+        }
+        @media (min-width: $Md) and (max-width: $Lg) {
+            flex-direction: column;
+          }
+
     
 
         h4{
             font-size: 20px;
             &:hover{
-                color: aqua;
+                color: $orange;
+            }
+
+            @media screen and (max-width: $Sm) {
+              font-size: 15px;
             }
         }
 

@@ -19,7 +19,7 @@ export function SingleFamilyHouse3() {
 
       
       <section id="gallery">
-        <h3 className="section-title">ŁAZIEKA ORAZ SALON</h3>
+        <h3 className="section-title">WYKOŃCZENIE DOMU JEDNORODZINNEGO</h3>
             <WSPGallery galleryImages={galleryImages}/>
         </section>
       </>

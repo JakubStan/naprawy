@@ -67,33 +67,8 @@ export function InteriorFinishing() {
               <p>Malowanie</p>
             </div>
 
-            <div className="list-item">
-              <img className="check" src={check} />
-              <p>Układanie paneli podłogowych z listwami</p>
-            </div>
-
-            <h4> Montaż </h4>
-            <div className="list-item">
-              <img className="check" src={check} />
-              <p>Ścian gk</p>
-            </div>
-            <div className="list-item">
-              <img className="check" src={check} />
-              <p>Zabudowy</p>
-            </div>
-            <div className="list-item">
-              <img className="check" src={check} />
-              <p>Srzedścianki na profilach</p>
-            </div>
-
-            <div className="list-item">
-              <img className="check" src={check} />
-              <p>Baterii prysznicowych</p>
-            </div>
-            <div className="list-item">
-              <img className="check" src={check} />
-              <p>Nowych baterii</p>
-            </div>
+             
+            
           </div>
         </div>
       </div>

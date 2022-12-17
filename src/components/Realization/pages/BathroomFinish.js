@@ -16,7 +16,7 @@ export function BathroomFinish() {
       </div>
       
       <section id="gallery">
-        <h3 className="section-title">WYKOŃCZENIE ŁAZIEKI</h3>
+        <h3 className="section-title">WYKOŃCZENIE ŁAZIENKI</h3>
         <WSPGallery galleryImages={galleryImages}/>
       </section>
     </>

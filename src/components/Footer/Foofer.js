@@ -26,67 +26,69 @@ const Footer = () => {
                         
 
                     <div className="column">
+                        <div className='inner-cintainer'>
                         <h4>FIRMA REMONTOWA</h4>
+                                <div className="contact-link">
+                                    <img src={phone}/>
+                                    <Callto phone="+48888868130">888 868 130</Callto>                            
+                                </div>
 
-                        <div className="contact-link">
-                            <img src={phone}/>
-                            <Callto phone="+48888868130"><h3>888 868 130</h3></Callto>                            
+                                <div className="contact-link">
+                                    <img src={at}/>
+                                    <Mailto email="maciektrebunia@gmail.com" subject="Hello & Welcome" body="Hello world!">
+                                        maciektrebunia@gmail.com
+                                    </Mailto>                                                     
+                                </div>
                         </div>
-
-                        <div className="contact-link">
-                            <img src={at}/>
-                            <Mailto email="maciektrebunia@gmail.com" subject="Hello & Welcome" body="Hello world!">
-                                <h3>maciektrebunia@gmail.com</h3>
-                            </Mailto>                                                     
-                        </div>
-
                     </div>          
 
                     <div className="column">
+                    <div className='inner-cintainer'>
                         <h4>OFERTA</h4>
 
                         <Link className="off-link" to="UrgentRepairs">                        
-                            <h3>NAPRAWY PILNE</h3>                                      
+                            NAPRAWY PILNE                                      
                         </Link>
 
                         <Link className="off-link" to="ElectricalModifications">                      
-                            <h3>PRZERÓBKI ELEKTRYCZNE</h3>                                      
+                            PRZERÓBKI ELEKTRYCZNE                                      
                         </Link> 
 
                         <Link className="off-link" to="HydraulicModifications">
-                            <h3>PRZERÓBKI HYDRAULICZNE</h3>                                      
+                            PRZERÓBKI HYDRAULICZNE                                      
                         </Link> 
 
                         <Link className="off-link" to="Exchange">
-                            <h3>WYMIANY</h3>                                      
+                            WYMIANY                                      
                         </Link> 
 
                         <Link className="off-link" to="Bathrooms">   
-                            <h3>ŁAZIENKI</h3>                                     
+                            ŁAZIENKI                                     
                         </Link> 
 
                         <Link to="InteriorFinishing" className="off-link">
-                            <h3>REMONTY I WYKOŃCZENIA</h3>                                     
+                            REMONTY I WYKOŃCZENIA                                     
                         </Link> 
           
-
+                        </div>
                     </div>
 
                     <div className="column">
-                        <h4>O FIRMIE</h4>
+                    <div className='inner-cintainer'>
+                        <h4>POZNAJ NASZĄ FIRMĘ</h4>
 
-                        <HashLink className="off-link" smooth to="/#abaut"><h3>O NAS</h3></HashLink>
-                        <HashLink className="off-link"  smooth to="/#offert"><h3>OFERTA</h3></HashLink>
+                        <HashLink className="off-link" smooth to="/#abaut">O NAS</HashLink>
+                        <HashLink className="off-link"  smooth to="/#offert">OFERTA</HashLink>
                         
                         <Link className="off-link" to="Realization">
-                            <h3>REALIZACJE</h3>                                     
+                            REALIZACJE                                     
                         </Link> 
 
                         <Link className="off-link" to="Contact">
-                            <h3>KONTAKT</h3>                                     
+                            KONTAKT                                     
                         </Link> 
                     </div>
-
+                </div>
                 </div>
 
             </footer>            

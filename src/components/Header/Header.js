@@ -22,16 +22,17 @@ function Header() {
     <>
       <header className="header">
         <div className="header-content">
+      
+
+          <div className="header-menu">
           <Link to="/">
             <img className="logo" src={logo} />
           </Link>
-
-          <div className="header-menu">
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn">
               <span class="navicon"></span>
             </label>
-
+         
             <ul class="menu">
               <li>
                 <HashLink className="line" smooth to="/#abaut">O NAS</HashLink>

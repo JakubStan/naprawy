@@ -1,5 +1,7 @@
 @import "./../../style/variables";
 @import "./../../style/typography";
+@import "./../../style/mixins";
+
 
 footer {
   background-image: url('../../images/footer.png');
@@ -17,13 +19,26 @@ footer {
     display: flex;
     justify-content: left;
     align-items: center;
-
     margin-top: 20px;
     margin-bottom: 20px;
-
-    h3{
-      margin-left: 20px;    
+    margin-left: 20px;
+    
+    img{
+      margin-right: 10px;
     }
+      
+    @media  (max-width: $Sm) {
+        font-size: 16px;
+       
+    }
+
+    @media screen and (min-width: $Sm) {
+      margin-left: 0px;
+    }
+
+
+    
+    
   }
 
   &::before{
@@ -37,11 +52,34 @@ footer {
     z-index: -1;
   }
 
+  a{
+    display: block;
+    font-weight: 600;
+    color: white;
+    font-size: 18px;    
+    &:hover{      
+      color: $orange;
+    }
+
+    @media (min-width: $Md) and (max-width: $Lg) {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
   h4{
     margin-bottom: 30px;
     color: white;
     font-size: 20px;
     position: relative;
+
+    @media screen and (max-width: $Sm) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $Sm) and (max-width: $Md) {
+      font-size: 25px;
+     }
 
     &::before{
       content: "";
@@ -51,6 +89,10 @@ footer {
       height: 3px;
       top: 25px;
       left: 2px;
+
+      @media (min-width: $Sm) and (max-width: $Md) {
+        top: 30px;
+     }
     }
   }
 
@@ -61,20 +103,59 @@ footer {
     padding-bottom: 2px;
   }
 
-  a{
-    color: white;
-    
-    &:hover{
-      
-      color: $orange;
-    }
-  }
+
 
   .footer-column{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 50px 10px;
+
+    @media screen and (max-width: $Sm) {
+      flex-direction: column;
+    }
+
+    @media (min-width: $Sm) and (max-width: $Md) {
+      flex-direction: column;
+     }
+
+
+    .column{
+
+      @media screen and (max-width: $Sm) {
+      display: flex;
+      justify-content: center;
+      }
+
+      @media (min-width: $Sm) and (max-width: $Md) {
+        display: flex;
+        justify-content: center;
+       }
+      .inner-cintainer{
+
+        @media (min-width: $Sm) and (max-width: $Md) {
+          display: inline-flex;
+          flex-direction: column;
+          width: 50vw;
+          margin-top: 15px;
+         }
+
+        @media screen and (max-width: $Sm) {
+          display: inline-flex;
+          flex-direction: column;
+          width: 75vw;
+        
+          
+          h4{
+            display: block;
+          }
+          .contact-link{
+            display: inline-flex;
+          }
+        }
+      }
+    }
+
   }
 
  

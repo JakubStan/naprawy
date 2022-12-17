@@ -7,7 +7,7 @@ export function Bathrooms() {
     <>
       <div className="header-bg bg-Bathrooms">
         <div className="page-name">
-          <h2>ŁAZIĘKI</h2>
+          <h2>ŁAZIENKI</h2>
         </div>
       </div>
 

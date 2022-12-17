@@ -15,7 +15,7 @@ export function Flat() {
       </div>
 
       <section id="gallery">
-        <h3 className="section-title">REMONT MIESZKANIA</h3>
+        <h3 className="section-title">REMONT MIESZKANIA I ŁAZIENKI</h3>
         <WSPGallery galleryImages={galleryImages}/> 
       </section>
     </>

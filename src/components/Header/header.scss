@@ -27,17 +27,36 @@
     .logo{
       width: 60px;
       padding: 15px;
+
+      @media screen and (max-width: $Sm) {
+        width: 45px;
+        padding: 10px;
+      }
+
+      @media (min-width: $Sm) and (max-width: $Md) {
+        padding:0px;
+        width: 50px;  
+       }
     }
   }
   .header-menu{
-
-
     left: 0;
     right: 0;
     margin: 0 auto;
     top: 53px;
-    display: table;
-  
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media screen and (max-width: $Sm) {
+      display: table;
+     }
+    
+     @media (min-width: $Sm) and (max-width: $Md) {
+      display: flex;
+      align-items: center;
+     }
 
   }
   ul {
@@ -45,8 +64,13 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
+    margin-right: 200px;
+
+    @media screen and (max-width: $Sm) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+     }
    
   }
 
@@ -63,6 +87,19 @@
     font-size: 30px;
     font-weight: 600;
 
+    @media screen and (max-width: $Sm) {
+      padding: 5px 10px;
+      font-size: 20px;
+     }
+
+     @media (min-width: $Sm) and (max-width: $Md) {
+      font-size: 22px;
+      padding: 20px 7px;  
+     }
+
+     @media (min-width: $Md) and (max-width: $Lg) {
+      font-size: 25px;
+      }
 
     &:hover{
      
@@ -84,6 +121,14 @@
     top: 33%;
     height: 30%;
 
+    @media screen and (max-width: $Sm) {
+     display: none;
+    }
+
+    @media (min-width: $Sm) and (max-width: $Md) {
+      display: block; 
+     }
+
   }
 }
 
@@ -95,18 +140,47 @@
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    margin: 0;
+
+ 
+    @media screen and (max-width: $Sm) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $Sm) and (max-width: $Md) {
+      margin-bottom: 0px;
+    }
+
+    @media (min-width: $Md) {
+      max-height: none;
+      display: flex;
+    }
+
+     
+    
   }
 
   .menu-icon {
     cursor: pointer;
     display: inline-block;
-
-    padding: 28px 20px;
+    float: right;
+    padding: 40px 20px;
     position: relative;
     user-select: none;
 
+
+
+    
+
+    @media screen and (max-width: $Sm) {
+      padding: 25px 20px;
+    }
+
     .navicon {
-      background: #333;
+      background: white;
       display: block;
       height: 2px;
       position: relative;
@@ -114,7 +188,7 @@
       width: 18px;
 
       &:before, &:after {
-        background: #333;
+        background: white;
         content: '';
         display: block;
         height: 100%;
@@ -131,6 +205,9 @@
         top: -5px;
       }
     }
+    @media (min-width: $Md) {
+      display: none;
+    }
   }
 
   .menu-btn {
@@ -142,6 +219,8 @@
       }
 
       .menu-icon {
+       
+
         .navicon {
           background: transparent;
 
@@ -164,28 +243,18 @@
   }
 
 
-/* menu */
 
-/* menu icon */
-
-/* menu btn */
-
-/* 48em = 768px */
-
-@media (min-width: 48em) {
+  @media (min-width: $Sm) and (max-width: $Md) {
   .header {
     li {
       float: left;
-
-      a {
-        padding: 31px 30px;
-      }
     }
 
     .menu {
-      clear: none;
-     
+      clear: none;     
       max-height: none;
+      display: flex;
+      flex-direction: row;
     }
 
     .menu-icon {
@@ -193,14 +262,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-

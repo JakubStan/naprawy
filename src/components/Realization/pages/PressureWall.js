@@ -17,8 +17,11 @@ export function PressureWall() {
 
       <section id="gallery">
         <h3 className="section-title">
-          ŚCIANKA DOCISKOWA POD DOMEM BEZ PODPIWNICZENIA
+          ŚCIANKA DOCISKOWA POD 
+          <br></br>
+          DOMEM BEZ PODPIWNICZENIA
         </h3>
+        
         <WSPGallery galleryImages={galleryImages}/>  
       </section>
     </>

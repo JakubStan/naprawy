@@ -18,7 +18,12 @@ import image20 from './SingleFamilyHouse20.jpg';
 import image21 from './SingleFamilyHouse21.jpg';
 import image22 from './SingleFamilyHouse22.jpg';
 import image23 from './SingleFamilyHouse23.jpg';
-
+import image24 from './HomeFinishing1.jpg' ;
+import image25 from './HomeFinishing2.jpg';
+import image26 from './HomeFinishing3.jpg';
+import image27 from './HomeFinishing4.jpg';
+import image28 from './HomeFinishing5.jpg';
+import image29 from './HomeFinishing6.jpg';
 
 export default  [
     
@@ -67,6 +72,46 @@ export default  [
     {
         img: image18
     },
+    {
+        img: image19
+    },
+    {
+        img: image20
+    },
+    {
+        img: image21
+    },
+    {
+        img: image22
+    },
+    {
+        img: image23
+    },
+    {
+        img: image24
+    },
+    {
+        img: image25
+    },
+    {
+        img: image26
+    },
+    
+    {
+        img: image27
+    },
+    {
+        img: image28
+    },    
+    {
+        img: image29
+    },
     
     
-    image19, image20,image21,image22,image23]
+    
+    
+    
+    
+    
+    
+    ]

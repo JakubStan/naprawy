@@ -15,6 +15,9 @@
 h2{
   font-size: 30px;
   text-align: center;
+  @media screen and (max-width: $Sm) {
+   font-size: 25px;
+}
 }
 
 h3{
@@ -22,5 +25,6 @@ h3{
 }
 
 p{
-  font-weight: 300;
+  font-weight: 400;
 }
+a {text-decoration: none;}

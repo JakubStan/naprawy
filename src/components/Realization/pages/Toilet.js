@@ -14,7 +14,7 @@ export function Toilet() {
       </div>
 
       <section id="gallery">
-        <h3 className="section-title">REMONT ŁAZIĘKI I WC</h3>
+        <h3 className="section-title">REMONT ŁAZIENKI I WC</h3>
         <WSPGallery galleryImages={galleryImages}/>
       </section>
     </>

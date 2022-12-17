@@ -10,13 +10,18 @@
     margin-left: 100px;
     margin-right: 100px;
 
-    .abaut-bf{
+    
+  @media screen and (max-width: $Sm) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  @media (min-width: $Sm) and (max-width: $Md) {
+    margin-left: 55px;
+    margin-right: 55px;
+}
 
 
-        &::before{
-            left: -65px;
-        }
-    }
 
     .abaut{
         display: flex;
@@ -27,13 +32,24 @@
 
     p{
         text-align: justify;
-        font-size: 25px;
+        font-size: 22px;
         margin-top: 50px;
     }
 
     img{
         width: 500px;
         margin-left: 80px;
+
+  
+
+        @media (max-width: $Xl) {
+            display: none;
+        }
+
+        @media (min-width: $Xl) and (max-width: $Xxl) {
+            height: 100%;
+          }
+
     }
 }
 

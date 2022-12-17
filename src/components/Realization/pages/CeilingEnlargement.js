@@ -18,9 +18,10 @@ export function CeilingEnlargement() {
       
       <section id="gallery">
         <h3 className="section-title">
-          WYKONANIE POWIĘKSZANIE STOPU ORAZ POSADZKI NA KONSTRUKCJI DREWNIANEJ
+          WYKONANIE POWIĘKSZANIE STOPU
+          </h3>
           <WSPGallery galleryImages={galleryImages}/>
-        </h3>
+        
        
       </section>
     </>

@@ -84,7 +84,7 @@ const Offer = () => {
 
         <div className="container">
           <div className="item">
-            <img src={construction} />
+            <img className="work-photo" src={construction} />
             <div className="WorkName">
               <img src={repairtols}/>
               <h3>NAPRAWY PILNE</h3>              
@@ -95,9 +95,9 @@ const Offer = () => {
           </div>
 
           <div className="item">
-            <img src={electrician} />
+            <img className="work-photo" src={electrician} />
             <div className="WorkName">
-              <img src={tools}/>
+              <img   src={tools}/>
               <h3>PRZERÓBKI ELEKTRYCZNE</h3>
             </div>
             <Link className="more-btn" to="/ElectricalModifications">
@@ -106,9 +106,9 @@ const Offer = () => {
           </div>
 
           <div className="item">
-            <img src={engineer} />
+            <img className="work-photo" src={engineer} />
             <div className="WorkName">
-              <img src={wrench}/>
+              <img  src={wrench}/>
               <h3>PRZERÓBKI HYDRAULICZNE</h3>
             </div>
             <Link className="more-btn" to="/HydraulicModifications">
@@ -117,7 +117,7 @@ const Offer = () => {
           </div>
 
           <div className="item">
-            <img src={laying} />
+            <img className="work-photo" src={laying} />
             <div className="WorkName">
               <img src={bathroom}/>
               <h3>ŁAZIENKI</h3>
@@ -128,7 +128,7 @@ const Offer = () => {
           </div>
 
           <div className="item">
-            <img src={wallpainting} />
+            <img className="work-photo" src={wallpainting} />
             <div className="WorkName">
               <img src={renovation}/>
               <h3>REMONTY I WYKOŃCZENIA</h3>
@@ -139,7 +139,7 @@ const Offer = () => {
           </div>
 
           <div className="item">
-            <img src={electric} />
+            <img className="work-photo" src={electric} />
             <div className="WorkName">
               <img src={plumbing}/>
               <h3>WYMIANY</h3>

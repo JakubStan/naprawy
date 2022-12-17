@@ -4,6 +4,32 @@
 
 #offert{
     margin: 80px 0px;
+
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        
+      
+        @media screen and (max-width: $Sm) {
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+
+          @media (min-width: $Md) and (max-width: $Lg) {
+            padding-left: 30px;
+            padding-right: 30px;
+            }
+        
+            @media (min-width: $Lg) and (max-width: $Xl) {
+                padding-left: 15px;
+                padding-right: 15px;    
+            }
+
+
+      }
+      
+      
 }
 
 
@@ -13,10 +39,31 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
 
+    @media screen and (max-width: $Sm) {
+        padding: 0px;
+     }
+
+     @media (min-width: $Sm) and (max-width: $Md) {
+        flex-direction: column;
+        display: flex;
+    }
+
+    @media (min-width: $Md) and (max-width: $Lg) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .item{
-        img{
-            width: 400px;
-            height: 100%;
+
+
+        .work-photo{
+            
+           
+
+
+            @media screen and (max-width: $Sm) {
+                  width: 100%;
+                  height: auto;
+             }
         }
 
 

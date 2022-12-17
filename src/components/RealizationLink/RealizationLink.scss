@@ -1,5 +1,7 @@
 @import "./../../style/variables";
 @import "./../../style/typography";
+@import "./../../style/mixins";
+
 
 
 #RealizationLink{
@@ -11,6 +13,10 @@
     background-attachment: fixed;
     position: relative;
 
+    @media screen and (max-width: $Sm) {
+    background-attachment: inherit;
+    }
+
     .deails {
         position: absolute;
         background-color: #33333387;
@@ -19,6 +25,32 @@
         bottom: 100px;
         padding: 20px;
         width: 400px;
+
+        @media screen and (max-width: $Sm) {
+            width: auto;
+            right: 0px;
+            bottom: 0;
+            top: 0;
+            height: 300px;
+            margin-top: auto;
+            margin-bottom: auto;
+            text-align: center;
+            }
+
+            @media (min-width: $Sm) and (max-width: $Md) {
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+             }
+
+             @media (min-width: $Md) and (max-width: $Lg) {
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+            }
+        
     }
 
 
@@ -33,6 +65,18 @@
 
     h4{
         font-size: 35px;
+
+        @media (min-width: $Sm) and (max-width: $Md) {
+        text-align: center;
+        }
+
+        @media (min-width: $Md) and (max-width: $Lg) {
+        text-align: center;
+        }
+
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
         &::before{
             content: "";
             background-color: $orange;
@@ -41,6 +85,26 @@
             height: 4px;
             top: 60px;
             left: 23px;
+
+            @media screen and (max-width: $Sm) {
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                }
+
+                @media (min-width: $Sm) and (max-width: $Md) {
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                 }
+                 @media (min-width: $Md) and (max-width: $Lg) {
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                }
         }
     }
 }

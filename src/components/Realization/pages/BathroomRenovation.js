@@ -15,7 +15,7 @@ export function BathroomRenovation() {
       </div>
       
       <section id="gallery">
-        <h3 className="section-title">REMONT ŁAZIĘKI</h3>
+        <h3 className="section-title">REMONT ŁAZIENKI</h3>
         <WSPGallery galleryImages={galleryImages}/>
       </section>
     </>

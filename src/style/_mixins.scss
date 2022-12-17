@@ -1,8 +1,10 @@
 /* Breakpoint */
 
-$Sm: 768px;
-$Md: 1500px;
-$Lg: 1920px;
+$Sm: 576px;
+$Md: 768px;
+$Lg: 992px;
+$Xl: 1200px;
+$Xxl: 1400px;
 
 @mixin for-Small-devices {
   @media (max-width: $Sm) {
@@ -20,7 +22,7 @@ $Lg: 1920px;
   }
 }
 @mixin for-XX-Large-devices {
-  @media (min-width: $Lg) {
+  @media (min-width: $Xl) and (max-width: $Xxl) {
     @content;
   }
 }

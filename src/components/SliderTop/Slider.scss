@@ -15,38 +15,113 @@
   height:100vh;
   background-repeat: no-repeat;
   background-size: cover;
-
   position: relative;
+  @media screen and (max-width: $Sm) {
+    height: 500px;
+    }
+
+    @media (min-width: $Sm) and (max-width: $Md) {
+      height: 50vh;
+   }
+
+   @media (min-width: $Md) and (max-width: $Xxl) {
+    height: 60vh;
+  }
 
 
   .offer-details{
     position: absolute;
-    background-color: $green2;
-    left: 50px;
-    bottom: 65px;
+    background-color: #000000ab;
+    left: 90px;
+    bottom: 35px;
     padding: 20px;
     width: 400px;
 
-    h4, p{
-      color: white;
-      font-size: 25px;
+    @media screen and (max-width: $Sm) {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: auto;      
     }
 
+    
+    @media (min-width: $Sm) and (max-width: $Md) {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 15vh;
+    bottom: 0;
+    height: 24vh;
+    width: 400px;
+   }
+
+   @media (min-width: $Md) and (max-width: $Lg) {
+    left: 0;
+    right: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+    h4, p{
+      color: white;
+      font-size: 300px;
+      }
+
     h4{
+      
+      @media screen and (max-width: $Sm) {
+      font-size: 18px;
+      }
+
+      @media (min-width: $Sm) and (max-width: $Md) {
+        font-size: 22px;
+      }
+
+      @media (min-width: $Md) and (max-width: $Lg) {
+        font-size: 24px;
+      }
+
+      @media (min-width: $Lg) and (max-width: $Xl) {
+        font-size: 28px;
+      }
+
       &::before {
         content: "";
         background-color: $orange;
         position: absolute;
-        width: 81px;
+        width: 80px;
         height: 4px;
-        top: 50px;
+        top: 48px;
         left: 21px;
+
+        @media screen and (max-width: $Sm) {
+          top: 45px;
+          height: 3px;
+        }
+
+        @media (min-width: $Md) and (max-width: $Lg) {
+          top: 47px;
+        }
+
+        @media (min-width: $Lg) and (max-width: $Xl) {
+          top: 50px;
+        }
     }
   }
     p{
       margin-top: 20px;
       text-align: justify;
       font-size: 20px;
+      @media screen and (max-width: $Sm) {
+        font-size: 16px;
+      }
+
+      @media (min-width: $Sm) and (max-width: $Md) {
+        font-size: 20pxw;
+      }
     }
 
   
@@ -92,11 +167,18 @@ background-position: top;
 .slick-arrow{
 width: 45px !important;
 height: 45px !important;
+
+
+@media screen and (max-width: $Sm) {
+  width: 35px !important;
+  height: 35px !important;
+ }
+
 }
 
 
 .slick-prev {
-left: 600px !important; 
+left: 20px !important; 
 
 &:before {
   content: "\276E" !important;     
@@ -105,7 +187,7 @@ left: 600px !important;
 }
 
 .slick-next {
-right: 960px !important;
+right: 20px !important;
 
 &:before {
   content: "\276F" !important;
@@ -117,8 +199,12 @@ right: 960px !important;
 .slick-prev, .slick-next {
 
 z-index: 1;
-top: 87% !important;
+top: 45% !important;
 background: $green2 !important;
+
+@media screen and (max-width: $Sm) {
+  top: 30% !important;
+}
 
 &:hover{
   background: $orange !important;
@@ -131,6 +217,10 @@ background: $green2 !important;
   font-size: 40px !important;
   position: absolute;    
   opacity: 1;
+
+  @media screen and (max-width: $Sm) {
+  font-size: 30px !important;
+  }
 }
 }
 

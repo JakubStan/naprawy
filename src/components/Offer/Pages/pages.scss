@@ -1,5 +1,5 @@
 @import "../../../style/variables";
-
+@import "../../../style/mixins";
 
 
 .bg-UrgentRepairs{
@@ -71,11 +71,29 @@
             .list{
                 margin-top: 100px;
                 margin-bottom: 100px;
+                margin-left: 25px;
+                margin-right: 25px;
+
+                @media screen and (max-width: $Sm) {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
 
                 h4{
                     font-size: 30px;
                     margin-bottom: 20px;
                     margin-top: 20px;
+                    @media screen and (max-width: $Sm) {
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                    @media (min-width: $Sm) and (max-width: $Md) {
+                        text-align: center;
+                    }
+
+                    @media (min-width: $Md) and (max-width: $Lg) {
+                        font-size: 28px;
+                      }
                 }
 
                 h5{
@@ -95,6 +113,14 @@
 
             p{
                 font-size: 30px;
+
+                @media (min-width: $Sm) and (max-width: $Md) {
+                    font-size: 25px;
+                }
+
+                @media screen and (max-width: $Sm) {
+                    font-size: 22px;
+                }
             }
 
         }

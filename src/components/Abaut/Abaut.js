@@ -65,7 +65,7 @@ export function Abaut() {
       <section id="abaut">
         <div className="abaut">
           <div className="description">
-            <h2 className="section-title abaut-bf">O NAS</h2>
+            <h2 className="section-title">POZNAJ NASZĄ FIRMĘ</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

@@ -17,7 +17,7 @@ export function SingleFamilyHouse() {
 
       <section id="gallery">
         <h3 className="section-title">
-          WYKONANIE ŁAZIENEK W DOMU JEDNORODZINNYM
+          WYKOŃCZENIE ŁAZIENKI
         </h3>
         <WSPGallery galleryImages={galleryImages}/>  
       </section>

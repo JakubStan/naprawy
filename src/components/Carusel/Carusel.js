@@ -71,8 +71,8 @@ export function Carusel() {
     arrows: false,
     autoplay: true,
 
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     initialSlide: 0,
     responsive: [
       {
@@ -82,6 +82,14 @@ export function Carusel() {
           slidesToScroll: 2,
           infinite: true,
           dots: false,
+        },
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        
         },
       },
       {
@@ -113,27 +121,19 @@ export function Carusel() {
   return (
     <>
       <section id="Slider">
-        <p>
-          Tutaj bedą loga firm których używacie materiałow i krótki opis. Lorem
-          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt{" "}
-        </p>
 
-        <p>
-          {" "}
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
+      <h2 className="section-title offer-bf">ROZWIĄZANIA</h2>
+
+
 
         <Slider {...settings}>
           {dataDigitalBestSeller.map((item) => (
             <div className="card-top">
               <img
                 src={
-                  defaultImage[item.title] === item.title
-                    ? defaultImage.linkDefault
-                    : item.linkImg
+                  
+       
+                     item.linkImg
                 }
                 alt={item.title}
                 onError={handleErrorImage}
