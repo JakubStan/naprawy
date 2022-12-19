@@ -64,26 +64,23 @@
     }
 
     h4{
-        font-size: 35px;
+        font-size: 30px;
 
-        @media (min-width: $Sm) and (max-width: $Md) {
-        text-align: center;
-        }
-
-        @media (min-width: $Md) and (max-width: $Lg) {
+        @media (min-width: $Sm) and (max-width: $Lg) {
         text-align: center;
         }
 
         margin-left: auto;
         margin-right: auto;
         left: 0;
+
         &::before{
             content: "";
             background-color: $orange;
             position: absolute;
             width: 90px;
             height: 4px;
-            top: 60px;
+            top: 55px;
             left: 23px;
 
             @media screen and (max-width: $Sm) {

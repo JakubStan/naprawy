@@ -67,7 +67,7 @@
 
     h4, p{
       color: white;
-      font-size: 300px;
+      font-size: 30px;
       }
 
     h4{
@@ -94,7 +94,7 @@
         position: absolute;
         width: 80px;
         height: 4px;
-        top: 48px;
+        top: 55px;
         left: 21px;
 
         @media screen and (max-width: $Sm) {
@@ -120,7 +120,7 @@
       }
 
       @media (min-width: $Sm) and (max-width: $Md) {
-        font-size: 20pxw;
+        font-size: 16px;
       }
     }
 

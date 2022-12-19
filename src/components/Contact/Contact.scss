@@ -53,6 +53,12 @@
             align-items: center;
             margin-top: 10px;
             margin-bottom: 10px;
+            justify-self: unset;
+            justify-content: center;
+
+            @media screen and (min-width: $Lg) {
+                justify-content: left;
+              }
 
             a{
                 color: black;

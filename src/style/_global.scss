@@ -39,11 +39,11 @@ body {
   text-align: center;  
   position: relative;
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 
 
   @media screen and (max-width: $Sm) {
-    font-size: 26px;
+    font-size: 25px;
   }
   
   @media (min-width: $Sm) and (max-width: $Md) {
@@ -66,18 +66,27 @@ body {
     position: absolute;
     width: 100px;
     height: 5px;
-    top: 65px;
+    top: 53px;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
 
-   
-    @media (min-width: $Sm) and (max-width: $Lg) {
-       display: none;
+
+
+    @media screen and (max-width: $Sm) and (max-width: $Md) {
+      top: 35px;
+      height: 3px;
     }
 
-    @media (min-width: $Lg) and (max-width: $Xl) {
+    @media screen and (max-width: $Md) and (max-width: $Lg) {
+      top: 35px;
+      height: 3px;
+    }
+
+    
+
+    @media (max-width: $Lg) and (max-width: $Xl) {
       top: 45px;
     }
 
