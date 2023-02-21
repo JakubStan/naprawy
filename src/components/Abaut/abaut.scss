@@ -1,0 +1,64 @@
+@import "../../style/index.scss";
+
+#abaut{
+    margin-bottom: 80px;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    @include for-Extra-Small-devices {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    @include for-Small-devices {
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+
+    .abaut{
+        display: flex;
+        padding-top: 36px;
+        padding-bottom: 36px;
+
+
+align-items: center;
+    }
+
+    p{
+        text-align: justify;
+        font-size: 22px;
+        margin-top: 50px;
+        @include for-Extra-Small-devices {
+            font-weight: 300;
+        }
+
+        @include for-Small-devices {
+            font-weight: 300;
+        }
+    }
+
+    img{
+        width: 500px;
+        margin-left: 80px;  
+
+        @media (max-width: $Xl) {
+            display: none;
+        }
+
+        @include for-Extra-Large-devices {
+            height: 100%;
+          }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+

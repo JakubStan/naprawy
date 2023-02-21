@@ -1,0 +1,115 @@
+@import "../../../style/index.scss";
+
+.bg-UrgentRepairs{
+    background-image: url('../../SliderTop/sliders/construction.jpg');
+    background-position: top !important;
+}
+
+.bg-ElectricalModifications{
+    background-image: url('../../SliderTop/sliders/electrician.jpg');
+}
+
+.bg-HydraulicModifications{
+    background-image: url('../../SliderTop/sliders/engineer.jpg');
+    background-position: top !important;
+}
+
+.bg-Bathrooms{
+    background-image: url('../../SliderTop/sliders/laying.jpg');    
+}
+
+.bg-InteriorFinishing{
+    background-image: url('../../SliderTop/sliders/wall-painting.jpg');
+    background-position: top !important;    
+}
+
+.bg-Exchange{
+    background-image: url('../../SliderTop/sliders/electric.jpg');
+    background-position: bottom !important; 
+}
+
+.offer-content{
+        display: flex;
+
+        .menu-off{
+            background-color: $gold;
+            
+            .off-link{
+
+                display: flex;
+                align-items: center;
+                padding: 15px 30px;
+                border-bottom: 1px solid white;
+
+                h3{
+                    color: white;
+                    font-size: 15px;
+                }
+                img{
+                    width: 25px;
+                    margin-right: 20px;
+                }
+            } 
+       }
+
+        .offer-details{
+            width: 100%;           
+            display: flex;
+            justify-content: center;
+
+            .list{
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-left: 25px;
+                margin-right: 25px;
+
+                @include for-Extra-Small-devices {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+
+                h4{                    
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+
+                    @include for-Small-devices {
+                        text-align: center;
+                    }
+
+                    @include for-Extra-Small-devices {
+                        font-size: 25px;
+                        text-align: center;
+                    }
+
+                    @include for-Medium-devices {
+                        font-size: 28px;
+                    }
+                }
+
+                h5{
+                    font-size: 20px;
+                    margin-top: 20px;
+                }
+            }
+
+            .list-item{
+                display: flex;
+            }
+
+            .check{
+                height: 20px;
+                margin-right: 20px;
+            }
+
+            p{
+                @include for-Small-devices {
+                    font-size: 22px;
+                }
+
+                @include for-Small-devices {
+                    font-size: 25px;
+                }              
+            }
+
+        }
+    }

@@ -1,0 +1,223 @@
+@import "./../../style/index.scss";
+
+
+.SliderTop{
+
+  
+.slick-slide > div {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.slide{
+  height:100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @include for-Extra-Small-devices {
+    height: 500px;
+  }
+
+  @include for-Small-devices {
+    height: 50vh;
+  }
+
+  @media (min-width: $Md) and (max-width: $Xxl) {
+    height: 60vh;
+  }
+
+  .offer-details{
+    position: absolute;
+    background-color: #000000ab;
+    left: 90px;
+    bottom: 35px;
+    padding: 20px;
+    width: 400px;
+
+    @include for-Extra-Small-devices {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: auto;      
+    }
+    
+    @include for-Small-devices {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 15vh;
+    bottom: 0;
+    height: 24vh;
+    width: 400px;
+   }
+
+   @include for-Medium-devices {
+    left: 0;
+    right: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+    h4, p { 
+      color: white;
+      font-size: 30px;
+    }
+
+    h4{
+      
+      @include for-Extra-Small-devices {
+      font-size: 18px;
+      }
+
+      @include for-Small-devices {
+        font-size: 22px;
+      }
+
+      @include for-Medium-devices {
+        font-size: 24px;
+      }
+
+      @include for-Large-devices {
+        font-size: 28px;
+      }
+
+      &::before {
+        content: "";
+        background-color: $gold;
+        position: absolute;
+        width: 80px;
+        height: 4px;
+        top: 60px;
+        left: 21px;
+
+        @include for-Extra-Small-devices {
+          top: 45px;
+          height: 2px;
+        }
+
+        @include for-Small-devices {
+          top: 50px;
+          height: 2px;          
+        }
+
+        @include for-Medium-devices {
+          top: 52px;
+        }
+
+        @include for-Large-devices {
+          top: 58px;
+        }
+    }
+  }
+    p{
+      margin-top: 20px;
+      text-align: justify;
+      font-size: 20px;
+
+      @include for-Extra-Small-devices {
+        font-size: 16px;
+      }
+
+      @include for-Small-devices {
+        font-size: 16px;
+      }
+    }  
+  }
+  
+}
+
+.construction{
+  background-image: url('./sliders/construction.jpg');
+  background-position: top;   
+}
+
+.electrican{
+  background-image: url('./sliders/electrician.jpg');
+  background-position: center;   
+}
+
+.engineer{
+  background-image: url('./sliders/engineer.jpg');
+  background-position: top;  
+}
+
+.electric{
+  background-image: url('./sliders/electric.jpg');
+  background-position: bottom; 
+}
+
+.laying{
+  background-image: url('./sliders/laying.jpg');
+  background-position: center;
+}
+
+.wall-painting{
+  background-image: url('./sliders/wall-painting.jpg');
+  background-position: top;
+}
+
+.slick-dots li button {
+  display: none;
+} 
+
+.slick-arrow{
+width: 45px !important;
+height: 45px !important;
+
+  @include for-Extra-Small-devices {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+}
+
+.slick-prev {
+  left: 20px !important; 
+
+  &:before {
+    content: "\276E" !important;     
+    left: 9px;
+  }
+}
+
+.slick-next {
+right: 20px !important;
+
+  &:before {
+    content: "\276F" !important;
+    right: 9px;    
+  }
+
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+  top: 45% !important;
+  background: $green2 !important;
+
+  @include for-Extra-Small-devices {
+    top: 30% !important;
+  }
+
+  &:hover{
+    background: $gold !important;
+  }
+
+&::before{
+  top: 0px;
+  font-size: 40px !important;
+  position: absolute;    
+  opacity: 1;
+
+  @include for-Extra-Small-devices {
+  font-size: 30px !important;
+  }
+}
+}
+
+
+}

@@ -1,0 +1,102 @@
+@import "./../../style/index.scss";
+
+#RealizationLink{
+    background-image: url('../../images/RealizationLinkBG.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+    @include for-Extra-Small-devices {
+    background-attachment: inherit;
+    }
+
+    .deails {
+        position: absolute;
+        background-color: #33333387;
+        color: white;
+        right: 100px;
+        bottom: 100px;
+        padding: 20px;
+        width: 400px;
+
+        @include for-Extra-Small-devices {
+            width: auto;
+            right: 0px;
+            bottom: 0;
+            top: 0;
+            height: 300px;
+            margin-top: auto;
+            margin-bottom: auto;
+            text-align: center;
+        }
+
+        @include for-Small-devices {
+            margin-left: auto;
+             margin-right: auto;
+            left: 0;
+            right: 0;
+        }
+
+        @include for-Medium-devices {
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+        }        
+    }
+     
+    p{
+        margin-top: 20px;
+        text-align: justify;
+        font-size: 20px;
+
+
+    }
+
+    h4{
+        font-size: 30px;
+
+        @media (min-width: $Sm) and (max-width: $Lg) {
+        text-align: center;
+        }
+
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+
+        &::before{
+            content: "";
+            background-color: $gold;
+            position: absolute;
+            width: 90px;
+            height: 4px;
+            top: 60px;
+            left: 22px;
+
+            @include for-Extra-Small-devices {
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+            }
+
+            @include for-Small-devices {
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+            
+            }
+
+            @include for-Medium-devices {
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}

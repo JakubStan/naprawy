@@ -1,0 +1,258 @@
+@import "./../../style/index.scss";
+
+.header {
+  position: fixed;
+  width: 100vw;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 2px 1px rgba(29, 28, 26, 0.26);
+  display: inline-table;
+}
+
+  .header-content{
+    background-color: #000000c7;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    padding: 0px 20px;
+
+    @include for-Extra-Small-devices {
+      border-bottom: 2px solid $gold2;
+    }
+
+    .logo{
+      width: 60px;
+   
+      
+      @include for-Extra-Small-devices {
+        width: 45px;
+        padding: 10px;
+      }
+
+      @include for-Small-devices {
+        padding:0px;
+        width: 50px;  
+       }
+    }
+  }
+
+  .header-menu{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 53px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+    @include for-Extra-Small-devices {
+      display: table;
+     }
+    
+    @include for-Small-devices  {
+      display: flex;
+      align-items: center;
+     }
+
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    margin-right: 200px;
+
+    @include for-Extra-Small-devices {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+     }
+   
+  }
+
+  li{
+    
+    .active{
+      background-color: $gold;
+    }
+  a {
+    display: block;
+    padding: 20px 20px;    
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+
+    @include for-Extra-Small-devices {
+      padding: 5px 10px;
+      font-size: 20px;   
+      text-align: center;
+     }
+
+     @include for-Small-devices  {
+      font-size: 22px;
+      padding: 20px 7px;  
+     }
+
+     @include for-Medium-devices {
+      font-size: 25px;
+      }
+
+    &:hover{     
+      background-color: $gold;
+    }  
+  
+  }
+}
+
+
+.line{
+  &::before{
+    position: absolute;
+    content: "";
+    border: 1px solid #ffffffd6;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+    top: 33%;
+    height: 30%;
+
+    @include for-Extra-Small-devices {
+     display: none;
+    }
+
+    @include for-Small-devices  {
+      display: block; 
+     }
+
+  }
+}
+
+.menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    margin: 0;
+
+
+ 
+    @include for-Extra-Small-devices {
+      margin-bottom: 10px;
+    }
+
+    @include for-Small-devices  {
+      margin-bottom: 0px;
+    }
+
+    @media (min-width: $Md) {
+      max-height: none;
+      display: flex;
+    }
+        
+}
+
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 40px 20px;
+    position: relative;
+    user-select: none;    
+
+    @include for-Extra-Small-devices {
+      padding: 25px 20px;
+    }
+
+    .navicon {
+      background: white;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+
+      &:before, &:after {
+        background: white;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+
+      &:before {
+        top: 5px;
+      }
+
+      &:after {
+        top: -5px;
+      }
+    }
+    @media (min-width: $Md) {
+      display: none;
+    }
+  }
+
+  .menu-btn {
+    display: none;
+
+    &:checked ~ {
+      .menu {
+        max-height: 240px;
+      }
+
+      .menu-icon {
+       
+
+        .navicon {
+          background: transparent;
+
+          &:before {
+            transform: rotate(-45deg);
+          }
+
+          &:after {
+            transform: rotate(45deg);
+          }
+        }
+
+        &:not(.steps) .navicon {
+          &:before, &:after {
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  @include for-Small-devices  {
+  .header {
+    li {
+      float: left;
+    }
+
+    .menu {
+      clear: none;     
+      max-height: none;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .menu-icon {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import "./variables";
+@import "./mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+
+  @include for-Extra-Small-devices {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+.section-title{
+  text-align: center;  
+  position: relative;
+  font-size: 50px;
+  margin-bottom: 70px;
+
+
+  @include for-Extra-Small-devices {
+    font-size: 25px;
+  }
+  
+  @include for-Small-devices {
+      font-size: 30px;
+  }
+
+  @include for-Medium-devices {
+    font-size: 40px;
+  }
+
+  @include for-Large-devices {
+    font-size: 40px;     
+  } 
+
+  &::before{
+    content: "";
+    background-color: #fcd100;
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include for-Extra-Small-devices{
+      display: none;
+    }
+
+    @include for-Small-devices{
+      top: 45px;
+    }
+
+    @include for-Medium-devices {
+      top: 55px;     
+    }
+   
+    @include for-Large-devices {
+      top: 55px;
+    }
+} 
+}
+
+.more-btn{
+  color: white;
+  background-color: $gold;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: 700;
+  border: 3px solid $gold;
+  font-size: 16px;
+
+  @include for-Extra-Small-devices {
+    font-size: 14px;
+  }
+
+  h3{
+    font-weight: 700;
+  }
+
+  &:hover{
+    background-color: transparent;
+    color: $gold;
+  }
+  
+}
+
+.header-bg{
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  .page-name{
+    background-color: $gold;
+    color: white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    width: 500px ;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include for-Extra-Small-devices {
+      width: 85%;
+      }   
+  }
+}
+
+
+.item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  img{
+    width: 370px;
+    height: 100%;
+
+    @include for-Medium-devices {
+      width: 330px;
+    }
+
+    @include for-Large-devices {
+      width: 300px;   
+    }
+  }
+
+.WorkName{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 115px;
+  background-color: #fcd100d6;
+  display: flex;
+  width: 320px;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+
+  @include for-Extra-Small-devices {
+    left: auto;
+    right: auto;
+  }
+  @include for-Medium-devices {
+    width: 275px;
+  }
+  @include for-Large-devices {
+    width: 260px;       
+  }
+
+  img{
+    width: 25px;
+  }   
+  
+  .tools{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    }
+
+
+  h3{
+    margin-left: 5px;
+    color: white;            
+    font-weight: bold;   
+    font-size: 18px;
+    font-weight: 600;
+
+    @media (min-width: $Sm) and (max-width: $Lg) {
+      font-size: 16px;
+    }
+
+    @include for-Large-devices {
+      font-size: 18px;     
+    }  
+          
+    @include for-Large-devices {
+      font-size: 15px;           
+    }
+
+    }
+  }
+}

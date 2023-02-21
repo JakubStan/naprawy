@@ -1,0 +1,62 @@
+@import "./../../style/index.scss";
+
+.bg-contact{
+    background-image: url('./contact-bg.jpg');
+}
+
+.contact{    
+    margin: 0 20px; 
+
+    .contact-content{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        @include for-Extra-Small-devices {
+            flex-direction: column;
+        }
+
+        @media (min-width: $Sm) and (max-width: $Lg) {
+            flex-direction: column;
+        }  
+
+        a{
+            font-size: 20px;
+            &:hover{
+                color: $gold;
+            }        
+        }
+
+        .contact-data{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-link{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            justify-self: unset;
+            justify-content: center;
+
+            @media screen and (min-width: $Lg) {
+                justify-content: left;
+            }
+
+            a{
+                color: black;
+            }
+
+            img{
+                width: 25px;
+                margin-right: 30px;
+            }
+        }
+
+    }
+
+}
+

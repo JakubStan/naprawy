@@ -1,0 +1,44 @@
+@import "mixins";
+@import "variables";
+
+/* Font/text values */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+
+
+.header-large{
+  font-size: 25px;
+  text-align: center;
+
+}
+
+h2{
+  font-size: 30px;
+  text-align: center;
+  @media screen and (max-width: $Sm) {
+   font-size: 25px;
+}
+}
+
+h3{
+  font-weight: 400;
+}
+
+p{
+  font-weight: 300;
+  font-size: 30px;
+  @include for-Extra-Small-devices {
+    font-size: 22px;
+  }
+
+  @include for-Small-devices {
+    font-size: 25px;
+  }
+
+  @include for-Medium-devices {
+    font-size: 28px;
+  }
+}
+
+
+a {text-decoration: none;}

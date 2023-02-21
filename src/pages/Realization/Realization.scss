@@ -1,0 +1,106 @@
+@import "./../../style/index.scss";
+
+.bg-realization{
+    background-image: url(./photos/realization.jpg);
+}
+
+.realization{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.offert-heading{
+    margin-top: 60px;
+}
+
+.container{
+    padding-left: 20px;
+    padding-right: 20px;   
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @media screen and (max-width: $Sm) {
+       display: flex;
+       flex-direction: column;
+    }
+
+    @media (min-width: $Sm) and (max-width: $Md) {
+        flex-direction: column;
+        display: flex;
+    }
+
+    @media (min-width: $Md) and (max-width: $Lg) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: $Lg) and (max-width: $Xl) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+
+    .item{
+        .WorkName{
+            img{
+                width: 25px;
+                height: auto;
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+    }
+
+
+    .btn-more{
+        display: flex;
+        justify-content: center;
+
+        h4{
+            width: 200px;
+            background-color: $gold;
+            color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+ 
+
+
+    img{
+        width: 400px;
+        height: auto;
+        margin: 30px;
+        
+        @media screen and (max-width: $Sm) {
+            width: 400px;
+            height: 100%;
+         
+         }
+
+         @media (min-width: $Md) and (max-width: $Lg) {
+            width: 330px;
+            height: 100%;
+          }
+
+          @media (min-width: $Lg) and (max-width: $Xl) {
+            width: 300px;
+            height: 100%;
+            margin: 15px;       
+          }
+
+          @media (min-width: $Xl) and (max-width: $Xxl) {
+            margin: 10px;
+            width: 370px;
+            height: 100%;
+        }
+    }
+}
+
+}

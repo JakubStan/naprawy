@@ -1,0 +1,76 @@
+#Slider{
+
+  margin-top: 60px;
+  margin-bottom: 150px;
+
+  p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .offer-bf{
+    margin-bottom: 70px;
+  }
+}
+
+.card-top{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slide > div {
+    margin: 0 10px;
+    padding-top: 45px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+  
+.card {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    overflow: hidden;  
+    height: 400px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .card-top h1 {
+    font-size: 0.9rem;
+    margin: 20px;
+  }
+  
+  .card-top > img {
+    max-width: 100%;
+    width: 220px;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-bottom {
+    margin: 10px 20px;
+  }
+  
+  .category {
+    position: relative;
+  }
+  .category::before {
+    content: '';
+    background: rgb(255, 61, 61);
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    height: 2px;
+  }
+
+
+  .slick-initialized .slick-slide
+  {
+    width: 100px;
+  }
+
+
+
+  
