@@ -9,9 +9,8 @@ const RealizationLink = () => {
           <h4>REALIZACJE</h4>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris
+            Chcesz przekonać się jak pracujemy ? Zobacz parę z naszych ostatnich
+            prac jakie wykonaliśmy dla naszych klientów!
           </p>
 
           <Link to="/Realization" className="more-btn">

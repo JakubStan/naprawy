@@ -77,10 +77,10 @@ function SliderTop() {
             <div className="offer-details">
               <h4>NAPRAWY PILNE</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Realizujemy naprawy w trybie pilnym. Wykonujemy naprawy usterek
+                oraz usuwamy awarie w zakresie hydrauliki, kanalizacji oraz
+                elektryki. Masz problem, który musisz szybko rozwiązać? Pomożemy
+                Ci tak szybko jak to tylko możliwe!
               </p>
               <Link to="/UrgentRepairs" className="more-btn">
                 WIĘCEJ
@@ -92,10 +92,12 @@ function SliderTop() {
             <div className="offer-details">
               <h4>PRZERÓBKI ELEKTRYCZNE</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Oferujemy usługi w zakresie przenoszenia i przerabiania
+                instalacji elektrycznych. Jeśli brakuję Ci gniazdek, obwodów
+                oświetlenia lub włączników to dobrze trafiłeś. Odpowiemy na
+                wszystkie twoje pytania oraz udzielimy fachowych porad. Pamiętaj
+                modyfikowanie instalacji bez fachowej wiedzy może się źle
+                skończyć.
               </p>
               <Link to="/ElectricalModifications" className="more-btn">
                 WIĘCEJ
@@ -107,10 +109,10 @@ function SliderTop() {
             <div className="offer-details">
               <h4>PRZERÓBKI HYDRAULICZNE</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Świadczymy rożnego rodzaju usługi hydrauliczne powiązane z
+                remontami oraz przeróbkami istniejących instalacji
+                wodno-kanalizacyjnych. Oferujemy montaż nowych instalacji jak
+                również wymianę oraz rozbudowę już istniejącej.
               </p>
               <Link to="/HydraulicModifications" className="more-btn">
                 WIĘCEJ
@@ -122,10 +124,9 @@ function SliderTop() {
             <div className="offer-details">
               <h4>ŁAZIENKI</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Oferujemy profesjonalne usługi glazurnicze, układanie płytek,
+                kompleksowe wykonywanie łazienek oraz remonty od podstaw.
+                Wykonujemy montaż i podłączenie sanitariatów.
               </p>
               <Link to="/Bathrooms" className="more-btn">
                 WIĘCEJ
@@ -137,10 +138,10 @@ function SliderTop() {
             <div className="offer-details">
               <h4>WYMIANY</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Planujesz remont mieszkania albo domu? Szykujesz się do
+                wykończenia wnętrza? Dobrze trafiłeś! Oferujemy szeroki zakres
+                usług począwszy od instalacji hydraulicznych i elektrycznych po
+                przez pracę budowlane aż po końcowe wykończenie.
               </p>
               <Link to="/Exchange" className="more-btn">
                 WIĘCEJ

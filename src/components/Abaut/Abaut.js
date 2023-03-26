@@ -9,13 +9,11 @@ export function Abaut() {
           <div className="description">
             <h2 className="section-title">NASZA FIRMA</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Jesteśmy profesjonalistami z wieloletnim doświadczeniem oraz
+              dziesiątkami zadowolonych klientów. Działamy na terenie Wrocławia
+              i okolic. Świadczymy szereg usług z branży hydraulicznej,
+              elektryki, remontów oraz wykończeń wnętrz. Pomagamy również naszym
+              klientom w usunięciu oraz naprawie nagłych awarii oraz usterkach.
             </p>
           </div>
 
