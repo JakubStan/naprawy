@@ -12,8 +12,6 @@ export function UrgentRepairs() {
       </div>
 
       <div className="offer-content">
-
-
         <div className="offer-details">
           <div className="list">
             <div className="list-item">
@@ -30,7 +28,7 @@ export function UrgentRepairs() {
             </div>
             <div className="list-item">
               <img className="check" src={check} />
-              <p>Wymiana liczników</p>
+              <p>Wymiana liczników wody</p>
             </div>
             <div className="list-item">
               <img className="check" src={check} />

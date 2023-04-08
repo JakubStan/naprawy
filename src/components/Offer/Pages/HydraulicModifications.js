@@ -11,8 +11,6 @@ export function HydraulicModifications() {
       </div>
 
       <div className="offer-content">
-   
-
         <div className="offer-details">
           <div className="list">
             <div className="list-item">
@@ -42,7 +40,7 @@ export function HydraulicModifications() {
             <div className="list-item">
               <img className="check" src={check} />
               <p>
-                Instalacje wodociągowe na materiałach typu PEX, PCV i metalowych
+                Instalacje wodociągowe na materiałach typu PEX, PP i metalowych
               </p>
             </div>
             <div className="list-item">

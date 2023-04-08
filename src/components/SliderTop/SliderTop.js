@@ -61,9 +61,9 @@ function SliderTop() {
   const settings = {
     dots: false,
     infinite: true,
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 900,
-    speed: 5000,
+    speed: 1000,
     arrows: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -138,10 +138,13 @@ function SliderTop() {
             <div className="offer-details">
               <h4>WYMIANY</h4>
               <p>
-                Planujesz remont mieszkania albo domu? Szykujesz się do
-                wykończenia wnętrza? Dobrze trafiłeś! Oferujemy szeroki zakres
-                usług począwszy od instalacji hydraulicznych i elektrycznych po
-                przez pracę budowlane aż po końcowe wykończenie.
+                Fachowo i profesjonalnie dokonujemy dla kompleksowej wymiany
+                elementów instalacji hydraulicznej oraz elektrycznej. Jesteśmy
+                profesjonalistami z wieloletnim doświadczeniem oraz dziesiątkami
+                zadowolonych klientów. Działamy na terenie Wrocławia i okolic.
+                Świadczymy szereg usług z branży hydraulicznej, elektryki,
+                remontów oraz wykończeń wnętrz. Pomagamy również naszym klientom
+                w usunięciu oraz naprawie nagłych awarii oraz usterkach.
               </p>
               <Link to="/Exchange" className="more-btn">
                 WIĘCEJ
@@ -153,10 +156,10 @@ function SliderTop() {
             <div className="offer-details">
               <h4>REMONTY I WYKOŃCZENIA</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Planujesz remont mieszkania albo domu? Szykujesz się do
+                wykończenia wnętrza? Dobrze trafiłeś! Oferujemy szeroki zakres
+                usług począwszy od instalacji hydraulicznych i elektrycznych po
+                przez pracę budowlane aż po końcowe wykończenie.
               </p>
               <Link to="/InteriorFinishing" className="more-btn">
                 WIĘCEJ

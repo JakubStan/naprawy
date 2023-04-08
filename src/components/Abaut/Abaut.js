@@ -13,7 +13,7 @@ export function Abaut() {
               dziesiątkami zadowolonych klientów. Działamy na terenie Wrocławia
               i okolic. Świadczymy szereg usług z branży hydraulicznej,
               elektryki, remontów oraz wykończeń wnętrz. Pomagamy również naszym
-              klientom w usunięciu oraz naprawie nagłych awarii oraz usterkach.
+              klientom w usunięciu oraz naprawie nagłych awarii oraz usterek.
             </p>
           </div>
 

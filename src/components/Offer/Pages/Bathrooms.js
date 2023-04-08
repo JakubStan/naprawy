@@ -16,7 +16,10 @@ export function Bathrooms() {
           <div className="list">
             <div className="list-item">
               <img className="check" src={check} />
-              <p>Remont łazienek od podstaw</p>
+              <p>
+                Remonty łazienek od podstaw oraz wykończenia stanu
+                deweloperskiego
+              </p>
             </div>
             <div className="list-item">
               <img className="check" src={check} />
@@ -40,11 +43,6 @@ export function Bathrooms() {
             <div className="list-item">
               <img className="check" src={check} />
               <p>Cięcie płytek pod kątem 45 stopni</p>
-            </div>
-
-            <div className="list-item">
-              <img className="check" src={check} />
-              <p>Biały montaż</p>
             </div>
           </div>
         </div>
