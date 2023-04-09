@@ -61,8 +61,8 @@ function SliderTop() {
   const settings = {
     dots: false,
     infinite: true,
-    //autoplay: true,
-    autoplaySpeed: 900,
+    autoplay: true,
+    autoplaySpeed: 4000,
     speed: 1000,
     arrows: true,
     slidesToShow: 1,

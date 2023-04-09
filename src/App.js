@@ -37,8 +37,8 @@ const App = () => {
       <Favicon url={favicon} />
 
       <BrowserRouter>
+        <Header />
         <ScrollToTop>
-          <Header />
           <SliderTop />
 
           <Routes>
