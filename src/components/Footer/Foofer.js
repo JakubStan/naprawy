@@ -83,9 +83,9 @@ const Footer = () => {
                 OFERTA
               </HashLink>
 
-              <Link className="off-link" to="Realization">
+              <HashLink className="off-link" to="Realization#Realization">
                 REALIZACJE
-              </Link>
+              </HashLink>
 
               <Link className="off-link" to="Contact">
                 KONTAKT

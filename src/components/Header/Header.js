@@ -3,18 +3,6 @@ import logo from "../../images/logo.png";
 import { NavLink, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-const Callto = ({ phone, children }) => {
-  return <a href={`tel:${phone}`}>{children}</a>;
-};
-
-const Mailto = ({ email, subject = "", body = "", children }) => {
-  let params = subject || body ? "?" : "";
-  if (subject) params += `subject=${encodeURIComponent(subject)}`;
-  if (body) params += `${subject ? "&" : ""}body=${encodeURIComponent(body)}`;
-
-  return <a href={`mailto:${email}${params}`}>{children}</a>;
-};
-
 function Header() {
   return (
     <>
@@ -43,9 +31,9 @@ function Header() {
               </li>
 
               <li>
-                <NavLink className="line" to="Realization">
+                <HashLink className="line" smooth to="Realization#Realization">
                   REALIZACJE
-                </NavLink>
+                </HashLink>
               </li>
               <li>
                 <NavLink to="Contact">KONTAKT</NavLink>

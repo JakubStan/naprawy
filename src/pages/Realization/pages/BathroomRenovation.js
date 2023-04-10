@@ -6,7 +6,7 @@ import galleryImages from "../photos/album10/album10";
 export function BathroomRenovation() {
   return (
     <>
-      <div className="header-bg bg-realization">
+      <div id="Realization" className="header-bg bg-realization">
         <div className="page-name">
           <h2>REALIZACJE</h2>
         </div>

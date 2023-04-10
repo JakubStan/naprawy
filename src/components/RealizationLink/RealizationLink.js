@@ -1,5 +1,5 @@
 import "./RealizationLink.scss";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const RealizationLink = () => {
   return (
@@ -13,9 +13,9 @@ const RealizationLink = () => {
             prac jakie wykonaliśmy dla naszych klientów!
           </p>
 
-          <Link to="/Realization" className="more-btn">
+          <HashLink to="/Realization#Realization" className="more-btn">
             WIĘCEJ
-          </Link>
+          </HashLink>
         </div>
       </section>
     </>

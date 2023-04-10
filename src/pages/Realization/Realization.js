@@ -1,5 +1,5 @@
 import "./Realization.scss";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import SingleFamilyHouse3 from "./photos/album1/SingleFamilyHouse22.jpg";
 import Kitchen from "./photos/album3/KitchenRenovation1.png";
@@ -15,7 +15,7 @@ import BathroomFinish from "./photos/album12/BathroomFinish3-2.png";
 const Realization = () => {
   return (
     <>
-      <div className="header-bg bg-realization">
+      <div id="Realization" className="header-bg bg-realization">
         <div className="page-name">
           <h2>REALIZACJE</h2>
         </div>
@@ -32,9 +32,12 @@ const Realization = () => {
               <div className="WorkName">
                 <h3>WYKOŃCZENIE DOMU JEDNORODZINNEGO</h3>
               </div>
-              <Link className="more-btn" to="/SingleFamilyHouse3">
+              <HashLink
+                className="more-btn"
+                to="/SingleFamilyHouse3#Realization"
+              >
                 WIĘCEJ
-              </Link>
+              </HashLink>
             </div>
 
             <div className="item">
@@ -42,11 +45,11 @@ const Realization = () => {
               <div className="WorkName">
                 <h3>REMONT KUCHNI</h3>
               </div>
-              <Link to="/Kitchen">
+              <HashLink to="/Kitchen#Realization">
                 <div className="more-btn">
                   <h4>WIĘCEJ</h4>
                 </div>
-              </Link>
+              </HashLink>
             </div>
 
             <div className="item">
@@ -54,11 +57,11 @@ const Realization = () => {
               <div className="WorkName">
                 <h3>REMONT ŁAZIENKI I WC</h3>
               </div>
-              <Link to="/Toilet">
+              <HashLink to="/Toilet#Realization">
                 <div className="more-btn">
                   <h4>WIĘCEJ</h4>
                 </div>
-              </Link>
+              </HashLink>
             </div>
 
             <div className="item">
@@ -66,11 +69,11 @@ const Realization = () => {
               <div className="WorkName">
                 <h3>REMONT MIESZKANIA I ŁAZIENKI</h3>
               </div>
-              <Link to="/Flat">
+              <HashLink to="/Flat#Realization">
                 <div className="more-btn">
                   <h4>WIĘCEJ</h4>
                 </div>
-              </Link>
+              </HashLink>
             </div>
 
             <div className="item">
@@ -78,11 +81,11 @@ const Realization = () => {
               <div className="WorkName">
                 <h3>ŚCIANKA DOCISKOWA</h3>
               </div>
-              <Link to="/PressureWall">
+              <HashLink to="/PressureWall#Realization">
                 <div className="more-btn">
                   <h4>WIĘCEJ</h4>
                 </div>
-              </Link>
+              </HashLink>
             </div>
 
             <div className="item">
@@ -93,11 +96,11 @@ const Realization = () => {
               <div className="WorkName">
                 <h3>WYKONANIE POWIĘKSZENIA STROPU</h3>
               </div>
-              <Link to="/CeilingEnlargement">
+              <HashLink to="/CeilingEnlargement#Realization">
                 <div className="more-btn">
                   <h4>WIĘCEJ</h4>
                 </div>
-              </Link>
+              </HashLink>
             </div>
 
             <div className="item">
@@ -105,11 +108,11 @@ const Realization = () => {
               <div className="WorkName">
                 <h3>WYKOŃCZENIE ŁAZIENKI</h3>
               </div>
-              <Link to="/SingleFamilyHouse">
+              <HashLink to="/SingleFamilyHouse#Realization">
                 <div className="more-btn">
                   <h4>WIĘCEJ</h4>
                 </div>
-              </Link>
+              </HashLink>
             </div>
 
             <div className="item">
@@ -117,11 +120,11 @@ const Realization = () => {
               <div className="WorkName">
                 <h3>REMONT ŁAZIENKI</h3>
               </div>
-              <Link to="/BathroomRenovation">
+              <HashLink to="/BathroomRenovation#Realization">
                 <div className="more-btn">
                   <h4>WIĘCEJ</h4>
                 </div>
-              </Link>
+              </HashLink>
             </div>
 
             <div className="item">
@@ -132,11 +135,11 @@ const Realization = () => {
               <div className="WorkName">
                 <h3>WYKOŃCZENIE DOMU JEDNORODZINNEGO</h3>
               </div>
-              <Link to="/SingleFamilyHouse4">
+              <HashLink to="/SingleFamilyHouse4#Realization">
                 <div className="more-btn">
                   <h4>WIĘCEJ</h4>
                 </div>
-              </Link>
+              </HashLink>
             </div>
 
             <div className="item">
@@ -144,11 +147,11 @@ const Realization = () => {
               <div className="WorkName">
                 <h3>WYKOŃCZENIE ŁAZIENKI</h3>
               </div>
-              <Link to="/BathroomFinish">
+              <HashLink to="/BathroomFinish#Realization">
                 <div className="more-btn">
                   <h4>WIĘCEJ</h4>
                 </div>
-              </Link>
+              </HashLink>
             </div>
           </div>
         </div>
