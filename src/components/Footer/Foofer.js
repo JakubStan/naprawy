@@ -87,9 +87,9 @@ const Footer = () => {
                 REALIZACJE
               </HashLink>
 
-              <Link className="off-link" to="Contact">
+              <HashLink className="off-link" to="Contact">
                 KONTAKT
-              </Link>
+              </HashLink>
             </div>
           </div>
         </div>
