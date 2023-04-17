@@ -18,6 +18,7 @@ const Mailto = ({ email, subject = "", body = "", children }) => {
 };
 
 const Contact = () => {
+  const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
