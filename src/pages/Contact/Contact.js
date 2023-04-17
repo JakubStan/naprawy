@@ -1,6 +1,6 @@
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 
 import at from "../../images/at.png";
 import phone from "../../images/phone.png";
@@ -18,12 +18,11 @@ const Mailto = ({ email, subject = "", body = "", children }) => {
 };
 
 const Contact = () => {
-  const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
+
       .sendForm(
         "service_48ec8p3",
         "template_bmj7z97",
