@@ -1,4 +1,6 @@
 import "./Contact.scss";
+import emailjs from "@emailjs/browser";
+import React, { useRef } from "react";
 
 import at from "../../images/at.png";
 import phone from "../../images/phone.png";
@@ -16,6 +18,28 @@ const Mailto = ({ email, subject = "", body = "", children }) => {
 };
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
       <div className="header-bg bg-contact">
@@ -28,6 +52,18 @@ const Contact = () => {
         <div className="contact-content">
           <div className="form">
             <h3 className="section-title">NAPISZ DO NAS</h3>
+
+            <form ref={form} onSubmit={sendEmail}>
+              <label>Imię i Nazwisko</label>
+              <input type="text" name="user_name" required />
+              <label>Email</label>
+              <input type="email" name="user_email" required />
+              <label>Numer telefonu</label>
+              <input type="tel" name="user_phone" required />
+              <label>Wiadomość</label>
+              <textarea name="message" required />
+              <input className="btn" type="submit" value="WYŚLIJ" />
+            </form>
           </div>
 
           <div className="contact-data">
