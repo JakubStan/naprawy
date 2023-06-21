@@ -20,7 +20,7 @@
   }
 
   @include for-Small-devices {
-    height: 50vh;
+    height: 100vh;
   }
 
   @media (min-width: $Md) and (max-width: $Xxl) {

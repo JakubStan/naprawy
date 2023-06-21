@@ -65,6 +65,8 @@ const Contact = () => {
               <textarea name="message" required />
               <input className="btn" type="submit" value="WYŚLIJ" />
             </form>
+
+            <div id="message" ref={ref} />
           </div>
 
           <div className="contact-data">

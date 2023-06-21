@@ -22,6 +22,8 @@ body {
   @include for-Extra-Small-devices {
     display: flex;
     flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
     }
 }
 
