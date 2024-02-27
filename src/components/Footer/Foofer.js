@@ -26,17 +26,13 @@ const Footer = () => {
               <h4>FIRMA REMONTOWA</h4>
               <div className="contact-link">
                 <img src={phone} />
-                <Callto phone="+48888868130">888 868 130</Callto>
+                <Callto phone="+48533868562">533868562</Callto>
               </div>
 
               <div className="contact-link">
                 <img src={at} />
-                <Mailto
-                  email="maciektrebunia@gmail.com"
-                  subject="Hello & Welcome"
-                  body="Hello world!"
-                >
-                  maciektrebunia@gmail.com
+                <Mailto email="naprawyiawarie@gmail.com">
+                  naprawyiawarie@gmail.com
                 </Mailto>
               </div>
             </div>
