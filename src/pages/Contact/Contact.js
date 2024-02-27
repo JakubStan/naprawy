@@ -41,6 +41,8 @@ const Contact = () => {
     e.target.reset();
   };
 
+  const ref = useRef();
+
   return (
     <>
       <div className="header-bg bg-contact">
@@ -74,17 +76,13 @@ const Contact = () => {
 
             <div className="contact-link">
               <img src={phone} alt="Phone" />
-              <Callto phone="+48888868130">888 868 130</Callto>
+              <Callto phone="+48533868562">533868562</Callto>
             </div>
 
             <div className="contact-link">
               <img src={at} alt="mail" />
-              <Mailto
-                email="maciektrebunia@gmail.com"
-                subject="Hello & Welcome"
-                body="Hello world!"
-              >
-                maciektrebunia@gmail.com
+              <Mailto email="naprawyiawarie@gmail.com">
+                naprawyiawarie@gmail.com
               </Mailto>
             </div>
           </div>
