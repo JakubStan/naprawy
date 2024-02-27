@@ -81,7 +81,11 @@ const Contact = () => {
 
             <div className="contact-link">
               <img src={at} alt="mail" />
-              <Mailto email="naprawyiawarie@gmail.com">
+              <Mailto
+                email="naprawyiawarie@gmail.com"
+                subject="Hello & Welcome"
+                body="Hello world!"
+              >
                 naprawyiawarie@gmail.com
               </Mailto>
             </div>
