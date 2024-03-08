@@ -1,6 +1,6 @@
 import "./Contact.scss";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import React, { useRef, useEffect } from "react";
 
 import at from "../../images/at.png";
 import phone from "../../images/phone.png";
@@ -19,26 +19,22 @@ const Mailto = ({ email, subject = "", body = "", children }) => {
 
 const Contact = () => {
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
-
-      .sendForm(
-        "service_52ie00e",
-        "service_52ie00e",
-        form.current,
-        "I7hezVVB0oak98lo5"
-      )
+      .sendForm("service_52ie00e", "template_bmj7z97", form.current, {
+        publicKey: "MxNK47cULvytFW2VR",
+      })
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          console.log("SUCCESS!");
         },
         (error) => {
-          console.log(error.text);
+          console.log("FAILED...", error.text);
         }
       );
-    e.target.reset();
   };
 
   const ref = useRef();
